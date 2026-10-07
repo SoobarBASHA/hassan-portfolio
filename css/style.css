@@ -1,0 +1,697 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0d0d0f;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(13, 13, 15, 0.95);
+  border-bottom: 1px solid #242428;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.main-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.main-nav a {
+  color: #ccccd1;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: white;
+}
+
+.main-nav .active-nav {
+  color: white;
+}
+
+
+/* =========================================
+   HOME HERO
+   ========================================= */
+
+.hero {
+  min-height: 78vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 30px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-kicker {
+  color: #9b9ba3;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  line-height: 0.95;
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  max-width: 780px;
+  color: #c8c8cd;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.primary-button {
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+.primary-button:hover {
+  background-color: #d8d8dc;
+}
+
+.secondary-button {
+  border: 1px solid #44444b;
+  color: #f5f5f5;
+}
+
+.secondary-button:hover {
+  border-color: #777780;
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+.section {
+  padding: 100px 30px;
+}
+
+.alt-section {
+  background-color: #121214;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  color: #8f8f97;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+
+.section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   HOME CURRENT FOCUS
+   ========================================= */
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.focus-card {
+  background-color: #151518;
+  border: 1px solid #26262b;
+  border-radius: 12px;
+  padding: 28px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.focus-card:hover {
+  transform: translateY(-4px);
+  border-color: #55555d;
+}
+
+.focus-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.focus-card p {
+  color: #bcbcc2;
+}
+
+
+/* =========================================
+   FEATURED PROJECT
+   ========================================= */
+
+.featured-project {
+  background-color: #121214;
+}
+
+.featured-description {
+  color: #c5c5ca;
+  max-width: 760px;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.project-tags span {
+  border: 1px solid #343439;
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: #bcbcc2;
+  font-size: 0.9rem;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-tags span:hover {
+  border-color: #66666f;
+  color: white;
+}
+
+
+/* =========================================
+   HOME ABOUT
+   ========================================= */
+
+.home-about p {
+  max-width: 720px;
+  color: #c1c1c7;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+}
+
+.text-link {
+  font-weight: 600;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   ABOUT HERO
+   ========================================= */
+
+.about-hero {
+  padding: 120px 30px 110px;
+  border-bottom: 1px solid #202024;
+}
+
+.about-hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  margin-top: 18px;
+  margin-bottom: 34px;
+
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.98;
+  font-weight: 700;
+}
+
+.about-hero-title span {
+  display: block;
+}
+
+.about-hero-description {
+  max-width: 760px;
+  color: #c4c4ca;
+  font-size: 1.2rem;
+}
+
+
+/* =========================================
+   EDUCATION
+   ========================================= */
+
+.education-card {
+  border: 1px solid #2a2a30;
+  border-radius: 14px;
+  padding: 32px;
+  max-width: 900px;
+}
+
+.education-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.education-heading h3 {
+  font-size: 1.6rem;
+}
+
+.education-subtitle {
+  color: #a7a7af;
+  margin-top: 5px;
+}
+
+.education-status {
+  border: 1px solid #414148;
+  border-radius: 999px;
+  padding: 7px 14px;
+  color: #c7c7cd;
+  font-size: 0.85rem;
+}
+
+.education-card > p {
+  color: #bdbdc4;
+  max-width: 780px;
+  margin-top: 16px;
+}
+
+
+/* =========================================
+   INTERESTS
+   ========================================= */
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+
+  background-color: #2a2a2f;
+  border: 1px solid #2a2a2f;
+}
+
+.interest-item {
+  background-color: #121214;
+  padding: 30px;
+  min-height: 180px;
+}
+
+.interest-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.interest-item p {
+  color: #b3b3ba;
+}
+
+
+/* =========================================
+   GOALS
+   ========================================= */
+
+.goal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.goal-card {
+  border: 1px solid #29292f;
+  border-radius: 14px;
+  padding: 30px;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-4px);
+  border-color: #55555d;
+}
+
+.card-number {
+  color: #777780;
+  font-size: 0.9rem;
+  margin-bottom: 60px;
+}
+
+.goal-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+}
+
+.goal-card p {
+  color: #b8b8bf;
+}
+
+
+/* =========================================
+   SKILLS
+   ========================================= */
+
+.skills-layout {
+  display: grid;
+  gap: 50px;
+}
+
+.skill-category {
+  border-top: 1px solid #2b2b31;
+  padding-top: 24px;
+}
+
+.skill-category-heading {
+  margin-bottom: 20px;
+}
+
+.skill-category-heading h3 {
+  font-size: 1.5rem;
+}
+
+.skill-list {
+  display: grid;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 16px 0;
+  border-bottom: 1px solid #202025;
+}
+
+.skill-row > span:first-child {
+  font-size: 1.05rem;
+}
+
+.skill-level {
+  color: #919198;
+  text-align: right;
+}
+
+
+/* =========================================
+   CURRENT LEARNING
+   ========================================= */
+
+.learning-list {
+  border-top: 1px solid #2c2c32;
+}
+
+.learning-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 30px;
+
+  padding: 24px 0;
+  border-bottom: 1px solid #2c2c32;
+}
+
+.learning-item span {
+  color: #777780;
+}
+
+.learning-item p {
+  font-size: 1.2rem;
+}
+
+
+/* =========================================
+   STRENGTHS
+   ========================================= */
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.strength-card {
+  border: 1px solid #29292f;
+  border-radius: 14px;
+  padding: 30px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.strength-card:hover {
+  transform: translateY(-4px);
+  border-color: #55555d;
+}
+
+.strength-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.strength-card p {
+  color: #b8b8bf;
+}
+
+
+/* =========================================
+   NEXT PAGE LINKS
+   ========================================= */
+
+.about-next-section {
+  background-color: #121214;
+}
+
+.next-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.next-page-card {
+  border: 1px solid #2d2d33;
+  border-radius: 14px;
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.next-page-card:hover {
+  transform: translateY(-4px);
+  border-color: #585860;
+  background-color: #17171a;
+}
+
+.next-page-card span {
+  color: #8d8d95;
+}
+
+.next-page-card strong {
+  font-size: 1.2rem;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+  border-top: 1px solid #242428;
+  padding: 40px 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  color: #8e8e95;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 950px) {
+
+  .goal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goal-card {
+    min-height: auto;
+  }
+
+  .card-number {
+    margin-bottom: 30px;
+  }
+
+  .interest-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .next-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .nav-container {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strength-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .section {
+    padding: 75px 20px;
+  }
+
+  .about-hero {
+    padding: 90px 20px 75px;
+  }
+
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-heading {
+    flex-direction: column;
+  }
+
+  .skill-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .skill-level {
+    text-align: left;
+  }
+
+  .learning-item {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+  }
+
+}
