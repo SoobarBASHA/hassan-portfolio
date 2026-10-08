@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Recipe Graphics Automation | Hassan Moharrem</title>
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
+    
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a
+          href="../index.html"
+          class="logo"
+        >
+          Hassan Moharrem
+        </a>
+        <nav class="main-nav">
+          <a href="../index.html">
+            Home
+          </a>
+          <a href="../about.html">
+            About
+          </a>
+          <a
+            href="../projects.html"
+            class="active-nav"
+          >
+            Projects
+          </a>
+          <a href="../experience.html">
+            Experience
+          </a>
+          <a href="../resume.html">
+            Resume
+          </a>
+          <a href="../contact.html">
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- PROJECT HERO -->
+      <section class="project-detail-hero">
+        <div class="section-container">
+          <a
+            href="../projects.html"
+            class="back-link"
+          >
+            ← Back to Projects
+          </a>
+
+          <div class="project-detail-heading">
+            <p class="section-label">
+              PYTHON • AUTOMATION • LOCAL AI
+            </p>
+            <h1>
+              Recipe Graphics Automation
+            </h1>
+          </div>
+
+          <p class="project-detail-intro">
+            A local application designed to automate the creation
+            of recipe graphics using reusable templates, recipe
+            images, ingredient data, layout analysis, and local
+            image-generation tools.
+          </p>
+
+          <div class="project-detail-meta">
+            <div>
+              <span class="meta-label">
+                Type
+              </span>
+              <strong>
+                Desktop Automation Tool
+              </strong>
+            </div>
+
+            <div>
+              <span class="meta-label">
+                Main Language
+              </span>
+              <strong>
+                Python
+              </strong>
+            </div>
+
+            <div>
+              <span class="meta-label">
+                AI Workflow
+              </span>
+              <strong>
+                ComfyUI
+              </strong>
+            </div>
+
+            <div>
+              <span class="meta-label">
+                Status
+              </span>
+              <strong>
+                In Development
+              </strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HERO IMAGE -->
+      <section class="project-visual-section">
+        <div class="section-container">
+          <figure class="project-image">
+            <img
+              src="../images/recipe-automation/app-overview.png"
+              alt="Main interface of the recipe graphics automation application"
+            />
+            <figcaption>
+              Main application interface showing the recipe
+              automation workflow.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- OVERVIEW -->
+      <section class="section">
+        <div class="section-container project-two-column">
+          <div>
+            <p class="section-label">
+              OVERVIEW
+            </p>
+            <h2>
+              Turning a repetitive workflow into a tool
+            </h2>
+          </div>
+
+          <div class="project-detail-text">
+            <p>
+              The project started from a repetitive image-production
+              workflow involving recipe photos, ingredient lists,
+              reusable graphic templates, and generated images.
+            </p>
+            <p>
+              Instead of manually organizing every recipe and
+              recreating the same steps each time, I began building
+              one local program that could manage the process from
+              recipe selection through image generation and export.
+            </p>
+            <p>
+              Each recipe is stored inside its own folder with food
+              images and an ingredients image, while a separate
+              template library provides reusable visual layouts.
+            </p>
+            <p>
+              The application connects these pieces together while
+              still giving the user control over selected recipes,
+              templates, images, and the final result.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORKFLOW -->
+      <section class="section alt-section">
+        <div class="section-container">
+          <p class="section-label">
+            WORKFLOW
+          </p>
+          <h2>
+            From recipe folder to finished graphic
+          </h2>
+
+          <div class="planned-feature-grid">
+            <div>
+              <span>
+                01
+              </span>
+              <h3>
+                Select Recipe
+              </h3>
+              <p>
+                Choose one or multiple recipes from the recipe
+                library using a searchable interface.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                02
+              </span>
+              <h3>
+                Choose Template
+              </h3>
+              <p>
+                Select a reusable visual template and preview its
+                structure before generating the final graphic.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                03
+              </span>
+              <h3>
+                Map Images
+              </h3>
+              <p>
+                Match recipe photos and ingredient information to
+                the correct areas of the selected template.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                04
+              </span>
+              <h3>
+                Analyze Layout
+              </h3>
+              <p>
+                Detect important template areas such as hero images,
+                cutouts, titles, and ingredient regions.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                05
+              </span>
+              <h3>
+                Generate
+              </h3>
+              <p>
+                Use local AI and image-processing tools to produce
+                the recipe graphic while preserving the requested
+                visual structure.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                06
+              </span>
+              <h3>
+                Export
+              </h3>
+              <p>
+                Save the completed image at the required
+                1080x1350 output size.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECIPE SELECTION -->
+      <section class="section">
+        <div class="section-container">
+          <div class="project-section-header">
+            <div>
+              <p class="section-label">
+                RECIPE MANAGEMENT
+              </p>
+              <h2>
+                Selecting and organizing recipes
+              </h2>
+            </div>
+
+            <p>
+              The application supports both single-recipe and
+              multi-recipe workflows while keeping the recipe
+              library searchable and organized.
+            </p>
+          </div>
+
+          <figure class="project-image">
+            <img
+              src="../images/recipe-automation/recipe-selector.png"
+              alt="Recipe selection interface with search and recipe choices"
+            />
+            <figcaption>
+              Recipe selection and search interface.
+            </figcaption>
+          </figure>
+
+          <div class="system-list impact-system-list">
+            <div class="system-row">
+              <span>
+                Search
+              </span>
+              <p>
+                Recipes can be searched instead of requiring the
+                user to manually browse through every folder.
+              </p>
+            </div>
+
+            <div class="system-row">
+              <span>
+                Single Recipe
+              </span>
+              <p>
+                A single recipe can be selected for a standard
+                one-recipe template.
+              </p>
+            </div>
+
+            <div class="system-row">
+              <span>
+                Multi-Recipe
+              </span>
+              <p>
+                Multiple recipes can be assigned to ordered slots
+                for templates containing several food images.
+              </p>
+            </div>
+
+            <div class="system-row">
+              <span>
+                Folder Structure
+              </span>
+              <p>
+                Each recipe has its own folder containing food
+                images and a dedicated ingredients image.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MULTI RECIPE -->
+      <section class="section alt-section">
+        <div class="section-container">
+          <div class="project-section-header">
+            <div>
+              <p class="section-label">
+                MULTI-RECIPE MODE
+              </p>
+              <h2>
+                Building graphics with several recipes
+              </h2>
+            </div>
+
+            <p>
+              Some templates contain several food-image slots, so
+              the tool supports selecting multiple recipes and
+              assigning them in a specific order.
+            </p>
+          </div>
+
+          <figure class="project-image">
+            <img
+              src="../images/recipe-automation/multi-recipe.png"
+              alt="Multi-recipe selection interface with several ordered recipe slots"
+            />
+            <figcaption>
+              Multi-recipe selection with ordered recipe slots.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- TEMPLATE PREVIEW -->
+      <section class="section">
+        <div class="section-container">
+          <div class="project-section-header">
+            <div>
+              <p class="section-label">
+                TEMPLATE SYSTEM
+              </p>
+              <h2>
+                Reusing visual layouts
+              </h2>
+            </div>
+
+            <p>
+              Templates define the visual structure while recipe
+              content changes from one generated graphic to another.
+            </p>
+          </div>
+
+          <figure class="project-image">
+            <img
+              src="../images/recipe-automation/template-preview.png"
+              alt="Recipe graphic template preview inside the automation application"
+            />
+            <figcaption>
+              Template preview used before generating a recipe graphic.
+            </figcaption>
+          </figure>
+
+          <div class="project-note">
+            <p class="section-label">
+              DESIGN GOAL
+            </p>
+            <p>
+              The goal is not to generate a completely new layout
+              every time. The tool is designed to understand and
+              reuse an existing template's structure while replacing
+              the food, recipe title, and ingredient content.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOD IMAGE PREVIEW -->
+      <section class="section alt-section">
+        <div class="section-container">
+          <div class="project-section-header">
+            <div>
+              <p class="section-label">
+                IMAGE MANAGEMENT
+              </p>
+              <h2>
+                Previewing recipe images
+              </h2>
+            </div>
+
+            <p>
+              Being able to see source food images before generation
+              makes it easier to verify that the correct recipe
+              content has been selected.
+            </p>
+          </div>
+
+          <figure class="project-image">
+            <img
+              src="../images/recipe-automation/food-preview.png"
+              alt="Food image preview inside the recipe automation application"
+            />
+            <figcaption>
+              Source food-image preview before generation.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- LAYOUT ANALYSIS -->
+      <section class="section">
+        <div class="section-container">
+          <div class="project-section-header">
+            <div>
+              <p class="section-label">
+                LAYOUT ANALYSIS
+              </p>
+              <h2>
+                Understanding the template
+              </h2>
+            </div>
+
+            <p>
+              A major technical challenge is identifying where
+              different pieces of recipe content belong inside
+              templates that originally exist as flat images.
+            </p>
+          </div>
+
+          <figure class="project-image">
+            <img
+              src="../images/recipe-automation/layout-analysis.png"
+              alt="Template layout analysis showing detected regions for recipe content"
+            />
+            <figcaption>
+              Layout-analysis output used to identify important
+              regions inside a template.
+            </figcaption>
+          </figure>
+
+          <div class="system-list impact-system-list">
+            <div class="system-row">
+              <span>
+                Hero Region
+              </span>
+              <p>
+                Identifies the primary area used for the main
+                recipe image.
+              </p>
+            </div>
+
+            <div class="system-row">
+              <span>
+                Cutouts
+              </span>
+              <p>
+                Supports additional circular, oval, or smaller
+                image regions depending on the template.
+              </p>
+            </div>
+
+            <div class="system-row">
+              <span>
+                Title Area
+              </span>
+              <p>
+                Identifies where the recipe name belongs without
+                covering important visual content.
+              </p>
+
+            </div>
+
+            <div class="system-row">
+
+              <span>
+                Ingredients
+              </span>
+              <p>
+                Identifies the region reserved for ingredient text,
+                including layouts that use several columns.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INGREDIENTS -->
+      <section class="section alt-section">
+        <div class="section-container project-two-column">
+          <div>
+            <p class="section-label">
+              INGREDIENTS
+            </p>
+            <h2>
+              Turning ingredient images into usable content
+            </h2>
+          </div>
+          <div class="project-detail-text">
+            <p>
+              Each recipe folder includes an
+              <strong>ingredients.jpg</strong> image containing the
+              recipe's ingredient information.
+            </p>
+            <p>
+              OCR and layout-analysis experiments are used to identify
+              and extract useful information so the final graphic can
+              place ingredient text into the correct template region.
+            </p>
+            <p>
+              The target format avoids unnecessary content such as
+              cooking steps, checkboxes, or prices and focuses only
+              on the ingredient information needed for the graphic.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCAL AI -->
+      <section class="section">
+        <div class="section-container">
+          <p class="section-label">
+            LOCAL AI WORKFLOW
+          </p>
+          <h2>
+            Connecting the application to ComfyUI
+          </h2>
+
+          <div class="status-grid">
+            <div class="status-card">
+              <span>
+                01
+              </span>
+              <h3>
+                ComfyUI
+              </h3>
+              <p>
+                Used as the local image-generation workflow behind
+                parts of the graphic-generation process.
+              </p>
+            </div>
+
+            <div class="status-card">
+              <span>
+                02
+              </span>
+              <h3>
+                Reusable Prompts
+              </h3>
+              <p>
+                Different prompt types are used depending on whether
+                the task involves full layouts, food images,
+                multi-slot templates, or ingredient replacement.
+              </p>
+            </div>
+
+            <div class="status-card">
+              <span>
+                03
+              </span>
+              <h3>
+                Multiple Machines
+              </h3>
+              <p>
+                The workflow has been tested across multiple
+                computers with different GPU resources while
+                preserving the same overall recipe system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GENERATED RESULT -->
+      <section class="section alt-section">
+        <div class="section-container">
+          <div class="project-section-header">
+            <div>
+              <p class="section-label">
+                OUTPUT
+              </p>
+              <h2>
+                Producing the finished graphic
+              </h2>
+            </div>
+            <p>
+              The final goal is a repeatable workflow that produces
+              consistent 1080x1350 recipe graphics while reducing
+              the amount of manual work required.
+            </p>
+          </div>
+
+          <figure class="project-image">
+            <img
+              src="../images/recipe-automation/generated-result.png"
+              alt="Completed recipe graphic produced through the automation workflow"
+            />
+            <figcaption>
+              Example of a finished 1080x1350 recipe graphic.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- DEBUGGING -->
+      <section class="section">
+        <div class="section-container">
+          <div class="project-section-header">
+            <div>
+              <p class="section-label">
+                DEVELOPMENT
+              </p>
+              <h2>
+                Testing and debugging the pipeline
+              </h2>
+            </div>
+
+            <p>
+              A large part of developing the tool has involved
+              testing individual stages instead of treating
+              generation as one black-box process.
+            </p>
+          </div>
+
+          <figure class="project-image">
+            <img
+              src="../images/recipe-automation/debug-output.png"
+              alt="Development and debugging output from the recipe automation tool"
+            />
+            <figcaption>
+              Debug output used while testing the template-analysis
+              and generation pipeline.
+            </figcaption>
+          </figure>
+
+          <div class="project-note">
+            <p class="section-label">
+              ITERATIVE DEVELOPMENT
+            </p>
+            <p>
+              The application has been built in stages. Individual
+              problems such as recipe selection, image previews,
+              layout detection, OCR, template mapping, and export
+              have been tested separately before being connected
+              into the larger workflow.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGES -->
+      <section class="section alt-section">
+        <div class="section-container">
+          <p class="section-label">
+            PROBLEM SOLVING
+          </p>
+          <h2>
+            Challenges I've worked through
+          </h2>
+
+          <div class="planned-feature-grid">
+            <div>
+              <span>
+                01
+              </span>
+              <h3>
+                Template Detection
+              </h3>
+              <p>
+                A flat image does not naturally describe which
+                regions represent food, titles, or ingredients,
+                so that structure has to be identified separately.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                02
+              </span>
+              <h3>
+                OCR Accuracy
+              </h3>
+              <p>
+                Extracting useful ingredient information from
+                images can produce noisy results that require
+                cleanup and better interpretation.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                03
+              </span>
+              <h3>
+                Image Placement
+              </h3>
+              <p>
+                Recipe photos need to fit differently shaped
+                template regions without losing important parts
+                of the food image.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                04
+              </span>
+              <h3>
+                Multi-Recipe Layouts
+              </h3>
+              <p>
+                Templates containing several recipes require
+                predictable ordering and correct assignment of
+                each image to its intended slot.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                05
+              </span>
+              <h3>
+                Consistency
+              </h3>
+              <p>
+                Generated images need to follow the original
+                template structure instead of changing the
+                design unexpectedly.
+              </p>
+            </div>
+
+            <div>
+              <span>
+                06
+              </span>
+              <h3>
+                Hardware Differences
+              </h3>
+              <p>
+                The application and generation workflow need to
+                remain usable across machines with different
+                amounts of available GPU power.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURRENT DIRECTION -->
+      <section class="section">
+        <div class="section-container project-two-column">
+          <div>
+            <p class="section-label">
+              CURRENT DIRECTION
+            </p>
+            <h2>
+              Moving toward a complete pipeline
+            </h2>
+          </div>
+
+          <div class="project-detail-text">
+            <p>
+              The core application already includes recipe
+              selection, search, previews, multi-recipe support,
+              and several parts of the template-analysis workflow.
+            </p>
+            <p>
+              Continued work is focused on improving automatic
+              composition, ingredient text placement, stable
+              template mapping, and the final generation pipeline.
+            </p>
+            <p>
+              I also want the workflow to make failed generations
+              easier to redo or correct without restarting the
+              entire process.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section alt-section">
+        <div class="section-container">
+          <p class="section-label">
+            PROJECT GALLERY
+          </p>
+          <h2>
+            Building the workflow
+          </h2>
+
+          <div class="development-gallery">
+
+            <figure class="gallery-item">
+              <img
+                src="../images/recipe-automation/app-overview.png"
+                alt="Recipe automation application overview"
+              />
+              <figcaption>
+                Application overview
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../images/recipe-automation/recipe-selector.png"
+                alt="Recipe selector"
+              />
+              <figcaption>
+                Recipe selection
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../images/recipe-automation/multi-recipe.png"
+                alt="Multi-recipe selection"
+              />
+              <figcaption>
+                Multi-recipe mode
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../images/recipe-automation/template-preview.png"
+                alt="Template preview"
+              />
+              <figcaption>
+                Template preview
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../images/recipe-automation/food-preview.png"
+                alt="Food image preview"
+              />
+              <figcaption>
+                Food-image preview
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../images/recipe-automation/layout-analysis.png"
+                alt="Template layout analysis"
+              />
+              <figcaption>
+                Layout analysis
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../images/recipe-automation/generated-result.png"
+                alt="Finished generated recipe graphic"
+              />
+              <figcaption>
+                Finished result
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img
+                src="../images/recipe-automation/debug-output.png"
+                alt="Recipe automation debugging output"
+              />
+              <figcaption>
+                Development and debugging
+              </figcaption>
+            </figure>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PREVIOUS / NEXT -->
+      <section class="section project-navigation">
+        <div class="section-container">
+          <div class="project-navigation-grid">
+
+            <a
+              href="impactsim.html"
+              class="project-navigation-card"
+            >
+              <span>
+                ← Previous Project
+              </span>
+              <strong>
+                ImpactSim
+              </strong>
+            </a>
+
+            <a
+              href="lightning-simulator.html"
+              class="project-navigation-card project-navigation-next"
+            >
+              <span>
+                Next Project →
+              </span>
+              <strong>
+                Lightning Simulator
+              </strong>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>
+          Hassan Moharrem
+        </p>
+        <p>
+          Game Development • Level Design • Programming
+        </p>
+        <p>
+          © 2026 Hassan Moharrem
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

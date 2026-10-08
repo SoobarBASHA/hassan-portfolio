@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>ImpactSim | Hassan Moharrem</title>
+
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
+  </head>
+
+  <body>
+
+    <!-- =========================================
+         NAVIGATION
+         ========================================= -->
+
+    <header class="site-header">
+
+      <div class="nav-container">
+
+        <a
+          href="../index.html"
+          class="logo"
+        >
+          Hassan Moharrem
+        </a>
+
+        <nav class="main-nav">
+
+          <a href="../index.html">
+            Home
+          </a>
+
+          <a href="../about.html">
+            About
+          </a>
+
+          <a
+            href="../projects.html"
+            class="active-nav"
+          >
+            Projects
+          </a>
+
+          <a href="../experience.html">
+            Experience
+          </a>
+
+          <a href="../resume.html">
+            Resume
+          </a>
+
+          <a href="../contact.html">
+            Contact
+          </a>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+
+    <main>
+
+
+      <!-- =========================================
+           PROJECT HERO
+           ========================================= -->
+
+      <section class="project-detail-hero">
+
+        <div class="section-container">
+
+          <a
+            href="../projects.html"
+            class="back-link"
+          >
+            ← Back to Projects
+          </a>
+
+
+          <div class="project-detail-heading">
+
+            <p class="section-label">
+              SIMULATION • MAPPING • SOFTWARE DEVELOPMENT
+            </p>
+
+            <h1>
+              ImpactSim
+            </h1>
+
+          </div>
+
+
+          <p class="project-detail-intro">
+            A desktop disaster and extreme-energy simulation
+            application built around interactive maps, configurable
+            events, geographic visualization, and multiple
+            simulation systems.
+          </p>
+
+
+          <div class="project-detail-meta">
+
+            <div>
+
+              <span class="meta-label">
+                Type
+              </span>
+
+              <strong>
+                Desktop Simulation App
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span class="meta-label">
+                Front End
+              </span>
+
+              <strong>
+                React + TypeScript
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span class="meta-label">
+                Mapping
+              </span>
+
+              <strong>
+                MapLibre GL
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span class="meta-label">
+                Desktop
+              </span>
+
+              <strong>
+                Tauri
+              </strong>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           HERO IMAGE
+           ========================================= -->
+
+      <section class="project-visual-section">
+
+        <div class="section-container">
+
+          <figure class="project-image">
+
+            <img
+              src="../images/impactsim/impactsim-overview.png"
+              alt="ImpactSim desktop application showing its main interactive map and simulation interface"
+            />
+
+            <figcaption>
+              ImpactSim running as a desktop application with the
+              main map and simulation controls visible.
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           OVERVIEW
+           ========================================= -->
+
+      <section class="section">
+
+        <div class="section-container project-two-column">
+
+          <div>
+
+            <p class="section-label">
+              OVERVIEW
+            </p>
+
+            <h2>
+              Visualizing extreme events
+            </h2>
+
+          </div>
+
+
+          <div class="project-detail-text">
+
+            <p>
+              ImpactSim is an interactive simulator built around
+              placing major events anywhere on a map and visualizing
+              their effects geographically.
+            </p>
+
+            <p>
+              Different event types use their own parameters,
+              calculations, presets, and visual layers while sharing
+              the same overall application and mapping system.
+            </p>
+
+            <p>
+              The project includes nuclear detonations, meteor
+              impacts, earthquakes, and other extreme-energy
+              scenarios.
+            </p>
+
+            <p>
+              One of the main goals is to keep the program expandable
+              so additional simulation types can be added without
+              rebuilding the entire application around them.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           TECHNOLOGY
+           ========================================= -->
+
+      <section class="section alt-section">
+
+        <div class="section-container">
+
+          <p class="section-label">
+            TECHNOLOGY
+          </p>
+
+          <h2>
+            How it's built
+          </h2>
+
+
+          <div class="status-grid">
+
+            <div class="status-card">
+
+              <span>
+                01
+              </span>
+
+              <h3>
+                React + TypeScript
+              </h3>
+
+              <p>
+                Used for the interface, application logic,
+                simulation controls, state, and reusable
+                components.
+              </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+              <span>
+                02
+              </span>
+
+              <h3>
+                MapLibre GL
+              </h3>
+
+              <p>
+                Powers the interactive map used to select locations
+                and display geographic simulation results.
+              </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+              <span>
+                03
+              </span>
+
+              <h3>
+                PMTiles
+              </h3>
+
+              <p>
+                Used as part of the local map-data system for
+                rendering geographic information inside the
+                application.
+              </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+              <span>
+                04
+              </span>
+
+              <h3>
+                Vite
+              </h3>
+
+              <p>
+                Used as part of the development and build
+                environment for the application.
+              </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+              <span>
+                05
+              </span>
+
+              <h3>
+                Tauri
+              </h3>
+
+              <p>
+                Wraps the project as a standalone desktop
+                application instead of keeping it limited
+                to a browser.
+              </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+              <span>
+                06
+              </span>
+
+              <h3>
+                Geographic Calculations
+              </h3>
+
+              <p>
+                Simulation results are translated into visible
+                map distances, areas, rings, and other geographic
+                overlays.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           NUCLEAR SIMULATION
+           ========================================= -->
+
+      <section class="section">
+
+        <div class="section-container">
+
+          <div class="project-section-header">
+
+            <div>
+
+              <p class="section-label">
+                SIMULATION TYPE
+              </p>
+
+              <h2>
+                Nuclear events
+              </h2>
+
+            </div>
+
+
+            <p>
+              Nuclear events use configurable values and presets
+              to calculate and display different effect areas
+              around a selected geographic location.
+            </p>
+
+          </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/impactsim/nuclear-simulation.png"
+              alt="ImpactSim nuclear detonation simulation displayed on an interactive map"
+            />
+
+            <figcaption>
+              Nuclear simulation with calculated effects displayed
+              geographically around the selected location.
+            </figcaption>
+
+          </figure>
+
+
+          <div class="system-list impact-system-list">
+
+            <div class="system-row">
+
+              <span>
+                Location
+              </span>
+
+              <p>
+                Events can be positioned directly on the map so the
+                results can be viewed in relation to real locations.
+              </p>
+
+            </div>
+
+
+            <div class="system-row">
+
+              <span>
+                Presets
+              </span>
+
+              <p>
+                Historical and theoretical presets allow different
+                nuclear-event sizes to be selected and compared.
+              </p>
+
+            </div>
+
+
+            <div class="system-row">
+
+              <span>
+                Effect Zones
+              </span>
+
+              <p>
+                Calculated results are represented visually using
+                geographic areas and rings around the event.
+              </p>
+
+            </div>
+
+
+            <div class="system-row">
+
+              <span>
+                Multiple Events
+              </span>
+
+              <p>
+                Multiple events can be placed so different locations
+                and scenarios can be viewed together.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           PRESETS
+           ========================================= -->
+
+      <section class="section alt-section">
+
+        <div class="section-container">
+
+          <div class="project-section-header">
+
+            <div>
+
+              <p class="section-label">
+                CONTROLS & PRESETS
+              </p>
+
+              <h2>
+                Configuring simulations
+              </h2>
+
+            </div>
+
+
+            <p>
+              Different simulation types require different inputs,
+              so ImpactSim provides controls and presets specific
+              to the event being created.
+            </p>
+
+          </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/impactsim/event-presets.png"
+              alt="ImpactSim interface showing configurable event options and presets"
+            />
+
+            <figcaption>
+              Event controls and presets used to configure
+              simulation scenarios.
+            </figcaption>
+
+          </figure>
+
+
+          <div class="project-note">
+
+            <p class="section-label">
+              INTERFACE DESIGN
+            </p>
+
+            <p>
+              One challenge is allowing each event type to expose
+              the controls it needs without making the overall
+              interface difficult to navigate. As more simulations
+              are added, keeping those controls organized becomes
+              increasingly important.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           METEOR SIMULATION
+           ========================================= -->
+
+      <section class="section">
+
+        <div class="section-container">
+
+          <div class="project-section-header">
+
+            <div>
+
+              <p class="section-label">
+                SIMULATION TYPE
+              </p>
+
+              <h2>
+                Meteor impacts
+              </h2>
+
+            </div>
+
+
+            <p>
+              Meteor simulation introduces a different group of
+              inputs and calculations while still using ImpactSim's
+              shared mapping and visualization system.
+            </p>
+
+          </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/impactsim/meteor-simulation.png"
+              alt="ImpactSim meteor impact simulation displayed on the map"
+            />
+
+            <figcaption>
+              Meteor impact simulation using its own configurable
+              parameters and geographic results.
+            </figcaption>
+
+          </figure>
+
+
+          <div class="project-note">
+
+            <p class="section-label">
+              SYSTEM DESIGN
+            </p>
+
+            <p>
+              Nuclear events, meteor impacts, and earthquakes do
+              not use identical inputs or calculations. Each
+              simulation therefore needs its own logic while still
+              behaving like part of the same application.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           EARTHQUAKE SIMULATION
+           ========================================= -->
+
+      <section class="section alt-section">
+
+        <div class="section-container">
+
+          <div class="project-section-header">
+
+            <div>
+
+              <p class="section-label">
+                SIMULATION TYPE
+              </p>
+
+              <h2>
+                Earthquakes
+              </h2>
+
+            </div>
+
+
+            <p>
+              Earthquake simulation expands the application beyond
+              explosion and impact scenarios into another type of
+              large-scale geographic event.
+            </p>
+
+          </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/impactsim/earthquake-simulation.png"
+              alt="ImpactSim earthquake simulation displayed using the application's interactive map"
+            />
+
+            <figcaption>
+              Earthquake simulation integrated into the same
+              map-based system used by the other event types.
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           MAPPING
+           ========================================= -->
+
+      <section class="section">
+
+        <div class="section-container project-two-column">
+
+          <div>
+
+            <p class="section-label">
+              MAPPING
+            </p>
+
+            <h2>
+              The map is part of the simulation
+            </h2>
+
+          </div>
+
+
+          <div class="project-detail-text">
+
+            <p>
+              The map is not simply a background for ImpactSim.
+              It is one of the application's main systems.
+            </p>
+
+            <p>
+              Event locations are selected geographically, while
+              calculated distances and areas are translated into
+              visual layers around those positions.
+            </p>
+
+            <p>
+              This means the project also has to deal with scale,
+              coordinates, map rendering, geographic distance,
+              local map data, and the visual presentation of
+              calculated information.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           INFINITE CITY
+           ========================================= -->
+
+      <section class="section alt-section">
+
+        <div class="section-container">
+
+          <div class="project-section-header">
+
+            <div>
+
+              <p class="section-label">
+                EXPERIMENT
+              </p>
+
+              <h2>
+                Infinite City
+              </h2>
+
+            </div>
+
+
+            <p>
+              Infinite City is an additional mode that expands
+              ImpactSim beyond its standard Earth-based map.
+            </p>
+
+          </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/impactsim/infinite-city.png"
+              alt="ImpactSim Infinite City mode"
+            />
+
+            <figcaption>
+              Infinite City mode provides another environment for
+              experimenting with ImpactSim's simulation systems.
+            </figcaption>
+
+          </figure>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           PROBLEM SOLVING
+           ========================================= -->
+
+      <section class="section">
+
+        <div class="section-container">
+
+          <p class="section-label">
+            PROBLEM SOLVING
+          </p>
+
+          <h2>
+            What makes the project challenging
+          </h2>
+
+
+          <div class="planned-feature-grid">
+
+            <div>
+
+              <span>
+                01
+              </span>
+
+              <h3>
+                Different Event Models
+              </h3>
+
+              <p>
+                Each simulation has different inputs and calculations,
+                but all of them need to behave like parts of the same
+                application.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                02
+              </span>
+
+              <h3>
+                Geographic Visualization
+              </h3>
+
+              <p>
+                Numerical simulation results need to be translated
+                into map areas that remain understandable at
+                different scales.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                03
+              </span>
+
+              <h3>
+                Interface Design
+              </h3>
+
+              <p>
+                Adding more simulation types also means adding more
+                controls without allowing the interface to become
+                difficult to use.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                04
+              </span>
+
+              <h3>
+                Local Map Data
+              </h3>
+
+              <p>
+                Working with local geographic data introduces
+                challenges involving storage, loading, rendering,
+                and map scale.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                05
+              </span>
+
+              <h3>
+                Multiple Events
+              </h3>
+
+              <p>
+                The application needs to keep track of multiple
+                placed events along with their settings,
+                calculations, and visual layers.
+              </p>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                06
+              </span>
+
+              <h3>
+                Desktop Packaging
+              </h3>
+
+              <p>
+                Turning the project into a standalone desktop
+                application adds another layer of development,
+                packaging, and testing.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           PROJECT GALLERY
+           ========================================= -->
+
+      <section class="section alt-section">
+
+        <div class="section-container">
+
+          <p class="section-label">
+            PROJECT GALLERY
+          </p>
+
+          <h2>
+            ImpactSim in development
+          </h2>
+
+
+          <div class="development-gallery">
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/impactsim/impactsim-overview.png"
+                alt="ImpactSim main application interface"
+              />
+
+              <figcaption>
+                Application overview
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/impactsim/nuclear-simulation.png"
+                alt="ImpactSim nuclear simulation"
+              />
+
+              <figcaption>
+                Nuclear simulation
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/impactsim/meteor-simulation.png"
+                alt="ImpactSim meteor simulation"
+              />
+
+              <figcaption>
+                Meteor simulation
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/impactsim/earthquake-simulation.png"
+                alt="ImpactSim earthquake simulation"
+              />
+
+              <figcaption>
+                Earthquake simulation
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/impactsim/event-presets.png"
+                alt="ImpactSim event presets and configuration controls"
+              />
+
+              <figcaption>
+                Event configuration and presets
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/impactsim/infinite-city.png"
+                alt="ImpactSim Infinite City mode"
+              />
+
+              <figcaption>
+                Infinite City mode
+              </figcaption>
+
+            </figure>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           WHAT I'M LEARNING
+           ========================================= -->
+
+      <section class="section">
+
+        <div class="section-container project-two-column">
+
+          <div>
+
+            <p class="section-label">
+              WHAT I'M LEARNING
+            </p>
+
+            <h2>
+              Connecting different systems
+            </h2>
+
+          </div>
+
+
+          <div class="project-detail-text">
+
+            <p>
+              ImpactSim has required several areas of development
+              to work together, including interface design,
+              geographic visualization, simulation logic,
+              application state, mapping, and desktop packaging.
+            </p>
+
+            <p>
+              It has also pushed me to think about how calculated
+              information should be communicated visually instead
+              of simply displaying raw values.
+            </p>
+
+            <p>
+              As the application grows, keeping the underlying
+              structure flexible enough for new simulation types
+              becomes increasingly important.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           PREVIOUS / NEXT PROJECT
+           ========================================= -->
+
+      <section class="section project-navigation">
+
+        <div class="section-container">
+
+          <div class="project-navigation-grid">
+
+
+            <a
+              href="shotgun-samurai.html"
+              class="project-navigation-card"
+            >
+
+              <span>
+                ← Previous Project
+              </span>
+
+              <strong>
+                Shotgun Samurai
+              </strong>
+
+            </a>
+
+
+            <a
+              href="recipe-automation.html"
+              class="project-navigation-card project-navigation-next"
+            >
+
+              <span>
+                Next Project →
+              </span>
+
+              <strong>
+                Recipe Graphics Automation
+              </strong>
+
+            </a>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer class="site-footer">
+
+      <div class="footer-container">
+
+        <p>
+          Hassan Moharrem
+        </p>
+
+        <p>
+          Game Development • Level Design • Programming
+        </p>
+
+        <p>
+          © 2026 Hassan Moharrem
+        </p>
+
+      </div>
+
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+
+  </body>
+</html>
