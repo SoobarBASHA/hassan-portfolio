@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Resume | Hassan Moharrem</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  />
+
+  <style>
+
+    .resume-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .resume-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+
+      border: 1px solid #34343a;
+      border-radius: 10px;
+
+      color: #ffffff;
+      text-decoration: none;
+
+      background: #161619;
+
+      font-size: 0.95rem;
+      font-weight: 600;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .resume-button:hover {
+      transform: translateY(-2px);
+      border-color: #66666f;
+      background: #202024;
+    }
+
+    .resume-button-primary {
+      background: #ffffff;
+      color: #09090b;
+      border-color: #ffffff;
+    }
+
+    .resume-button-primary:hover {
+      background: #e8e8eb;
+      border-color: #e8e8eb;
+    }
+
+
+    /* =========================================
+       RESUME DOCUMENT
+       ========================================= */
+
+    .resume-document {
+      max-width: 1050px;
+      margin: 0 auto;
+
+      padding: 54px 58px;
+
+      background: #ffffff;
+      color: #111111;
+
+      border-radius: 16px;
+
+      box-shadow:
+        0 20px 70px rgba(0, 0, 0, 0.35);
+    }
+
+    .resume-document a {
+      color: #174d7a;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+
+    /* Header */
+
+    .resume-header {
+      text-align: center;
+      padding-bottom: 22px;
+      margin-bottom: 14px;
+
+      border-bottom: 2px solid #174d7a;
+    }
+
+    .resume-header h2 {
+      margin: 0 0 8px;
+
+      color: #111111;
+
+      font-size: 2rem;
+      line-height: 1.1;
+
+      letter-spacing: 0.02em;
+    }
+
+    .resume-contact-line {
+      margin: 4px 0;
+
+      color: #222222;
+
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .resume-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      gap: 8px 16px;
+
+      margin-top: 5px;
+    }
+
+
+    /* Sections */
+
+    .resume-section {
+      margin-top: 18px;
+    }
+
+    .resume-section h3 {
+      margin: 0 0 8px;
+
+      color: #174d7a;
+
+      font-size: 1.03rem;
+      line-height: 1;
+
+      text-transform: uppercase;
+      letter-spacing: 0.035em;
+    }
+
+    .resume-section p {
+      margin: 0;
+
+      color: #111111;
+
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+
+    /* Entries */
+
+    .resume-entry {
+      margin-top: 12px;
+    }
+
+    .resume-entry:first-of-type {
+      margin-top: 0;
+    }
+
+    .resume-entry-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      gap: 20px;
+
+      margin-bottom: 2px;
+    }
+
+    .resume-entry-heading h4 {
+      margin: 0;
+
+      color: #111111;
+
+      font-size: 0.97rem;
+      line-height: 1.35;
+
+      font-weight: 700;
+    }
+
+    .resume-date {
+      flex-shrink: 0;
+
+      color: #222222;
+
+      font-size: 0.91rem;
+      font-style: italic;
+
+      white-space: nowrap;
+    }
+
+    .resume-subtitle {
+      margin: 1px 0 4px !important;
+
+      color: #4b4b4b !important;
+
+      font-size: 0.91rem !important;
+      font-style: italic;
+    }
+
+    .resume-entry ul {
+      margin: 4px 0 0;
+      padding-left: 20px;
+    }
+
+    .resume-entry li {
+      margin: 3px 0;
+
+      color: #111111;
+
+      font-size: 0.93rem;
+      line-height: 1.4;
+    }
+
+
+    /* Skills */
+
+    .resume-skill-row {
+      margin: 3px 0 !important;
+    }
+
+    .resume-skill-row strong {
+      font-weight: 700;
+    }
+
+
+    /* PDF Preview */
+
+    .resume-pdf-frame {
+      width: 100%;
+      height: 1000px;
+
+      margin-top: 30px;
+
+      border: 1px solid #29292f;
+      border-radius: 16px;
+
+      background: #111114;
+    }
+
+
+    /* Mobile */
+
+    @media (max-width: 760px) {
+
+      .resume-document {
+        padding: 32px 24px;
+        border-radius: 10px;
+      }
+
+      .resume-header h2 {
+        font-size: 1.6rem;
+      }
+
+      .resume-entry-heading {
+        display: block;
+      }
+
+      .resume-date {
+        display: block;
+        margin-top: 2px;
+      }
+
+      .resume-actions {
+        flex-direction: column;
+      }
+
+      .resume-button {
+        width: 100%;
+      }
+
+      .resume-pdf-frame {
+        height: 720px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================================
+       NAVIGATION
+       ========================================= -->
+
+  <header class="site-header">
+
+    <div class="nav-container">
+
+      <a
+        href="index.html"
+        class="logo"
+      >
+        Hassan Moharrem
+      </a>
+
+
+      <nav class="main-nav">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="experience.html">
+          Experience
+        </a>
+
+        <a
+          href="resume.html"
+          class="active-nav"
+        >
+          Resume
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
+    <section class="project-detail-hero">
+
+      <div class="section-container">
+
+        <div class="project-detail-heading">
+
+          <p class="section-label">
+            RESUME
+          </p>
+
+          <h1>
+            Experience, Projects & Skills
+          </h1>
+
+        </div>
+
+
+        <div
+          class="project-detail-text"
+          style="max-width: 760px;"
+        >
+
+          <p>
+            Computer Science student focused on game development,
+            software development, simulation, and technical
+            problem-solving.
+          </p>
+
+        </div>
+
+
+        <div class="resume-actions">
+
+          <a
+            href="files/Hassan-Moharrem-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resume-button resume-button-primary"
+          >
+            View Resume PDF
+          </a>
+
+
+          <a
+            href="files/Hassan-Moharrem-Resume.pdf"
+            download="Hassan-Moharrem-Resume.pdf"
+            class="resume-button"
+          >
+            Download Resume
+          </a>
+
+
+          <a
+            href="contact.html"
+            class="resume-button"
+          >
+            Contact Me
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FULL RESUME
+         ========================================= -->
+
+    <section class="section">
+
+      <div class="section-container">
+
+
+        <article class="resume-document">
+
+
+          <!-- HEADER -->
+
+          <header class="resume-header">
+
+            <h2>
+              HASSAN MOHARREM
+            </h2>
+
+
+            <p class="resume-contact-line">
+              Parker, CO
+              &nbsp; | &nbsp;
+              720-292-6617
+              &nbsp; | &nbsp;
+              <a href="mailto:moharremsg@gmail.com">
+                moharremsg@gmail.com
+              </a>
+            </p>
+
+
+            <div class="resume-links">
+
+              <a
+                href="https://github.com/SoobarBASHA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/SoobarBASHA
+              </a>
+
+
+              <a
+                href="https://www.linkedin.com/in/hassan-m-04b2b12a6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/in/hassan-m-04b2b12a6
+              </a>
+
+            </div>
+
+          </header>
+
+
+
+          <!-- SUMMARY -->
+
+          <section class="resume-section">
+
+            <h3>
+              Summary
+            </h3>
+
+            <p>
+              Computer Science student and aspiring game/software
+              developer with hands-on experience building an
+              Unreal Engine project, a desktop simulation
+              application, and Python automation tools. Strong
+              problem-solving, debugging, communication, and
+              decision-making skills developed through technical
+              projects, soccer operations, and officiating.
+            </p>
+
+          </section>
+
+
+
+          <!-- EDUCATION -->
+
+          <section class="resume-section">
+
+            <h3>
+              Education
+            </h3>
+
+
+            <div class="resume-entry">
+
+              <div class="resume-entry-heading">
+
+                <h4>
+                  Metropolitan State University of Denver -
+                  Bachelor of Science in Computer Science
+                </h4>
+
+                <span class="resume-date">
+                  Expected May 2028
+                </span>
+
+              </div>
+
+              <p class="resume-subtitle">
+                Denver, CO
+              </p>
+
+            </div>
+
+          </section>
+
+
+
+          <!-- TECHNICAL SKILLS -->
+
+          <section class="resume-section">
+
+            <h3>
+              Technical Skills
+            </h3>
+
+
+            <p class="resume-skill-row">
+              <strong>Programming:</strong>
+              C++, Python, Java, TypeScript, HTML, CSS, GML
+            </p>
+
+
+            <p class="resume-skill-row">
+              <strong>Game Development:</strong>
+              Unreal Engine 5, Blueprint Visual Scripting,
+              GameMaker Studio 2
+            </p>
+
+
+            <p class="resume-skill-row">
+              <strong>Web / Application:</strong>
+              React, Django, Vite, Tauri, MapLibre GL
+            </p>
+
+
+            <p class="resume-skill-row">
+              <strong>Tools:</strong>
+              Git, GitHub, Visual Studio Code, Visual Studio,
+              PMTiles, ComfyUI
+            </p>
+
+          </section>
+
+
+
+          <!-- PROJECTS -->
+
+          <section class="resume-section">
+
+            <h3>
+              Projects
+            </h3>
+
+
+
+            <!-- THUNDER OF OWARI -->
+
+            <div class="resume-entry">
+
+              <div class="resume-entry-heading">
+
+                <h4>
+                  Thunder of Owari |
+                  Unreal Engine 5, Blueprints
+                </h4>
+
+                <span class="resume-date">
+                  2026 - Present
+                </span>
+
+              </div>
+
+
+              <ul>
+
+                <li>
+                  Developing an original third-person game in
+                  Unreal Engine 5 using Blueprint visual scripting.
+                </li>
+
+                <li>
+                  Implemented sprint and stamina systems,
+                  exhaustion behavior, crouching, directional
+                  dodging, and camera-relative movement.
+                </li>
+
+                <li>
+                  Integrated and debugged character animation
+                  systems, movement-state logic, retargeting,
+                  transitions, and root-motion behavior.
+                </li>
+
+              </ul>
+
+            </div>
+
+
+
+            <!-- IMPACTSIM -->
+
+            <div class="resume-entry">
+
+              <div class="resume-entry-heading">
+
+                <h4>
+                  ImpactSim |
+                  React, TypeScript, MapLibre GL, PMTiles, Tauri
+                </h4>
+
+                <span class="resume-date">
+                  2026 - Present
+                </span>
+
+              </div>
+
+
+              <ul>
+
+                <li>
+                  Built a desktop simulator for nuclear and
+                  extreme-energy events, meteor impacts, and
+                  earthquakes with configurable inputs.
+                </li>
+
+                <li>
+                  Implemented Infinite City, 2D Earth, and 3D globe
+                  visualization modes with local map data, terrain,
+                  satellite imagery, and geographic event
+                  placement.
+                </li>
+
+                <li>
+                  Added multiple simultaneous events, animated
+                  effect regions, historical and theoretical
+                  presets, and desktop display settings.
+                </li>
+
+              </ul>
+
+            </div>
+
+
+
+            <!-- RECIPE AUTOMATION -->
+
+            <div class="resume-entry">
+
+              <div class="resume-entry-heading">
+
+                <h4>
+                  Recipe Graphics Automation |
+                  Python, ComfyUI
+                </h4>
+
+                <span class="resume-date">
+                  2026 - Present
+                </span>
+
+              </div>
+
+
+              <ul>
+
+                <li>
+                  Developing a local automation tool for producing
+                  1080 x 1350 recipe graphics from reusable
+                  templates and recipe image folders.
+                </li>
+
+                <li>
+                  Built recipe selection, search, previews, image
+                  mapping, OCR-assisted layout experiments, and
+                  automated export workflows.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </section>
+
+
+
+          <!-- EXPERIENCE -->
+
+          <section class="resume-section">
+
+            <h3>
+              Experience
+            </h3>
+
+
+
+            <!-- SITE COORDINATOR -->
+
+            <div class="resume-entry">
+
+              <div class="resume-entry-heading">
+
+                <h4>
+                  Site Coordinator |
+                  Colorado Soccer Association
+                </h4>
+
+                <span class="resume-date">
+                  2026 - Present
+                </span>
+
+              </div>
+
+
+              <ul>
+
+                <li>
+                  Coordinate with coaches, referees, and
+                  scorekeepers to help matches begin and end on
+                  schedule.
+                </li>
+
+                <li>
+                  Manage sideline behavior, address immediate
+                  sportsmanship issues, and document referee
+                  misconduct or abuse through official reporting
+                  channels.
+                </li>
+
+              </ul>
+
+            </div>
+
+
+
+            <!-- REFEREE -->
+
+            <div class="resume-entry">
+
+              <div class="resume-entry-heading">
+
+                <h4>
+                  Soccer Referee |
+                  Colorado Soccer Association
+                </h4>
+
+                <span class="resume-date">
+                  2016 - 2020; 2025 - Present
+                </span>
+
+              </div>
+
+
+              <ul>
+
+                <li>
+                  Make rapid and impartial decisions in
+                  competitive matches while communicating clearly
+                  with players, coaches, and other officials.
+                </li>
+
+                <li>
+                  Manage disagreements under pressure and
+                  collaborate with referee crews to maintain
+                  consistent rule enforcement and match control.
+                </li>
+
+              </ul>
+
+            </div>
+
+
+
+            <!-- PAX WEST -->
+
+            <div class="resume-entry">
+
+              <div class="resume-entry-heading">
+
+                <h4>
+                  PAX West Event Support |
+                  Euphoric Brothers - Human Apocalypse
+                </h4>
+
+                <span class="resume-date">
+                  2021
+                </span>
+
+              </div>
+
+
+              <ul>
+
+                <li>
+                  Assisted with booth setup and supported the
+                  team's presence at PAX West.
+                </li>
+
+                <li>
+                  Engaged convention attendees and helped direct
+                  interested visitors toward the booth to increase
+                  attention and playtesting traffic.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </section>
+
+
+
+          <!-- LANGUAGES -->
+
+          <section class="resume-section">
+
+            <h3>
+              Languages
+            </h3>
+
+            <p>
+              English: Fluent
+              &nbsp; | &nbsp;
+              Arabic: Fluent
+            </p>
+
+          </section>
+
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PDF VERSION
+         ========================================= -->
+
+    <section class="section alt-section">
+
+      <div class="section-container">
+
+        <div class="project-section-header">
+
+          <div>
+
+            <p class="section-label">
+              PDF VERSION
+            </p>
+
+            <h2>
+              View the original resume
+            </h2>
+
+          </div>
+
+
+          <p>
+            The PDF version can be viewed directly below or
+            downloaded for offline use.
+          </p>
+
+        </div>
+
+
+        <iframe
+          src="files/Hassan-Moharrem-Resume.pdf"
+          title="Hassan Moharrem Resume PDF"
+          class="resume-pdf-frame"
+        >
+        </iframe>
+
+
+        <div
+          class="resume-actions"
+          style="margin-top: 24px;"
+        >
+
+          <a
+            href="files/Hassan-Moharrem-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="resume-button resume-button-primary"
+          >
+            Open PDF
+          </a>
+
+
+          <a
+            href="files/Hassan-Moharrem-Resume.pdf"
+            download="Hassan-Moharrem-Resume.pdf"
+            class="resume-button"
+          >
+            Download PDF
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+
+  <footer class="site-footer">
+
+    <div class="footer-container">
+
+      <p>
+        Hassan Moharrem
+      </p>
+
+      <p>
+        Game Development • Level Design • Programming
+      </p>
+
+      <p>
+        © 2026 Hassan Moharrem
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

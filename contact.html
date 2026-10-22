@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Contact | Hassan Moharrem</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  />
+
+  <style>
+
+    /* =========================================
+       CONTACT PAGE
+       ========================================= */
+
+    .contact-intro {
+      max-width: 760px;
+      margin-top: 28px;
+    }
+
+    .contact-intro p {
+      margin: 0 0 14px;
+
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+
+    /* Contact cards */
+
+    .contact-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+      gap: 20px;
+
+      margin-top: 45px;
+    }
+
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      min-height: 190px;
+
+      padding: 28px;
+
+      border: 1px solid #29292f;
+      border-radius: 16px;
+
+      background: #111114;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+
+      border-color: #55555e;
+
+      background: #17171b;
+    }
+
+    .contact-card-label {
+      margin-bottom: 20px;
+
+      color: #888891;
+
+      font-size: 0.78rem;
+      font-weight: 600;
+
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .contact-card h2 {
+      margin: 0 0 10px;
+
+      color: #ffffff;
+
+      font-size: 1.25rem;
+    }
+
+    .contact-card p {
+      margin: 0;
+
+      color: #b5b5bd;
+
+      font-size: 0.95rem;
+      line-height: 1.5;
+
+      word-break: break-word;
+    }
+
+    .contact-arrow {
+      margin-top: 24px;
+
+      color: #ffffff;
+
+      font-size: 1rem;
+    }
+
+
+    /* Opportunities section */
+
+    .contact-opportunities {
+      max-width: 850px;
+    }
+
+    .contact-opportunities p {
+      margin: 0 0 15px;
+
+      font-size: 1.03rem;
+      line-height: 1.75;
+    }
+
+
+    /* Availability tags */
+
+    .contact-tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      margin-top: 28px;
+    }
+
+    .contact-tag {
+      padding: 9px 14px;
+
+      border: 1px solid #303038;
+      border-radius: 999px;
+
+      color: #d4d4da;
+
+      background: #111114;
+
+      font-size: 0.88rem;
+    }
+
+
+    /* Direct contact */
+
+    .direct-contact-box {
+      padding: 34px;
+
+      border: 1px solid #29292f;
+      border-radius: 16px;
+
+      background: #111114;
+    }
+
+    .direct-contact-box h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .direct-contact-box p {
+      max-width: 700px;
+
+      margin-bottom: 24px;
+
+      line-height: 1.7;
+    }
+
+    .contact-email-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 50px;
+
+      padding: 0 24px;
+
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+
+      background: #ffffff;
+      color: #09090b;
+
+      text-decoration: none;
+
+      font-weight: 600;
+
+      transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .contact-email-button:hover {
+      transform: translateY(-2px);
+
+      background: #e6e6e9;
+    }
+
+
+    @media (max-width: 760px) {
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        min-height: 160px;
+      }
+
+      .direct-contact-box {
+        padding: 25px;
+      }
+
+      .contact-email-button {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================================
+       NAVIGATION
+       ========================================= -->
+
+  <header class="site-header">
+
+    <div class="nav-container">
+
+      <a
+        href="index.html"
+        class="logo"
+      >
+        Hassan Moharrem
+      </a>
+
+
+      <nav class="main-nav">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="experience.html">
+          Experience
+        </a>
+
+        <a href="resume.html">
+          Resume
+        </a>
+
+        <a
+          href="contact.html"
+          class="active-nav"
+        >
+          Contact
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
+    <section class="project-detail-hero">
+
+      <div class="section-container">
+
+        <div class="project-detail-heading">
+
+          <p class="section-label">
+            CONTACT
+          </p>
+
+          <h1>
+            Let's Connect
+          </h1>
+
+        </div>
+
+
+        <div class="contact-intro">
+
+          <p>
+            I'm currently open to internships, entry-level
+            positions, and other opportunities where I can gain
+            hands-on experience and continue developing my
+            technical skills.
+          </p>
+
+          <p>
+            I'm especially interested in game development,
+            level design, technical design, software development,
+            and related technical roles.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CONTACT LINKS
+         ========================================= -->
+
+    <section class="section">
+
+      <div class="section-container">
+
+        <p class="section-label">
+          GET IN TOUCH
+        </p>
+
+        <h2>
+          Contact Information
+        </h2>
+
+
+        <div class="contact-grid">
+
+
+          <!-- EMAIL -->
+
+          <a
+            href="mailto:moharremsg@gmail.com"
+            class="contact-card"
+          >
+
+            <div>
+
+              <div class="contact-card-label">
+                Email
+              </div>
+
+              <h2>
+                Send Me an Email
+              </h2>
+
+              <p>
+                moharremsg@gmail.com
+              </p>
+
+            </div>
+
+            <div class="contact-arrow">
+              Open Email →
+            </div>
+
+          </a>
+
+
+
+          <!-- PHONE -->
+
+          <a
+            href="tel:+17202926617"
+            class="contact-card"
+          >
+
+            <div>
+
+              <div class="contact-card-label">
+                Phone
+              </div>
+
+              <h2>
+                Call or Text
+              </h2>
+
+              <p>
+                720-292-6617
+              </p>
+
+            </div>
+
+            <div class="contact-arrow">
+              Contact →
+            </div>
+
+          </a>
+
+
+
+          <!-- GITHUB -->
+
+          <a
+            href="https://github.com/SoobarBASHA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+
+            <div>
+
+              <div class="contact-card-label">
+                GitHub
+              </div>
+
+              <h2>
+                View My Code
+              </h2>
+
+              <p>
+                github.com/SoobarBASHA
+              </p>
+
+            </div>
+
+            <div class="contact-arrow">
+              Visit GitHub →
+            </div>
+
+          </a>
+
+
+
+          <!-- LINKEDIN -->
+
+          <a
+            href="https://www.linkedin.com/in/hassan-m-04b2b12a6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+          >
+
+            <div>
+
+              <div class="contact-card-label">
+                LinkedIn
+              </div>
+
+              <h2>
+                Connect Professionally
+              </h2>
+
+              <p>
+                linkedin.com/in/hassan-m-04b2b12a6
+              </p>
+
+            </div>
+
+            <div class="contact-arrow">
+              Visit LinkedIn →
+            </div>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         OPPORTUNITIES
+         ========================================= -->
+
+    <section class="section alt-section">
+
+      <div class="section-container project-two-column">
+
+        <div>
+
+          <p class="section-label">
+            OPPORTUNITIES
+          </p>
+
+          <h2>
+            What I'm Looking For
+          </h2>
+
+        </div>
+
+
+        <div class="contact-opportunities">
+
+          <p>
+            I'm looking for opportunities where I can contribute
+            to real projects, learn from experienced developers
+            and designers, and continue building professional
+            experience.
+          </p>
+
+          <p>
+            I'm open to roles that involve programming, gameplay
+            systems, game development, level design, technical
+            design, software development, testing, or related
+            technical work.
+          </p>
+
+
+          <div class="contact-tags">
+
+            <span class="contact-tag">
+              Game Development
+            </span>
+
+            <span class="contact-tag">
+              Level Design
+            </span>
+
+            <span class="contact-tag">
+              Technical Design
+            </span>
+
+            <span class="contact-tag">
+              Software Development
+            </span>
+
+            <span class="contact-tag">
+              Programming
+            </span>
+
+            <span class="contact-tag">
+              Internships
+            </span>
+
+            <span class="contact-tag">
+              Entry-Level Roles
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         DIRECT CONTACT
+         ========================================= -->
+
+    <section class="section">
+
+      <div class="section-container">
+
+        <div class="direct-contact-box">
+
+          <p class="section-label">
+            DIRECT CONTACT
+          </p>
+
+          <h2>
+            Have an opportunity in mind?
+          </h2>
+
+          <p>
+            The easiest way to reach me is by email. I'm happy to
+            discuss internships, entry-level positions, projects,
+            collaborations, or other opportunities where my skills
+            may be useful.
+          </p>
+
+
+          <a
+            href="mailto:moharremsg@gmail.com?subject=Portfolio%20Opportunity"
+            class="contact-email-button"
+          >
+            Email Me
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+
+  <footer class="site-footer">
+
+    <div class="footer-container">
+
+      <p>
+        Hassan Moharrem
+      </p>
+
+      <p>
+        Game Development • Level Design • Programming
+      </p>
+
+      <p>
+        © 2026 Hassan Moharrem
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

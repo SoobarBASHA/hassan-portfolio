@@ -81,10 +81,10 @@
         <div class="section-container">
 
           <a
-            href="../projects-current.html"
+            href="../projects.html"
             class="back-link"
           >
-            ← Current Work
+            ← All Projects
           </a>
 
 
@@ -260,41 +260,6 @@
               A large number of the details for the project also
               came to me later in a dream, which helped turn the
               general concept into a much more specific game idea.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- =========================================
-           CONCEPT VISUAL PLACEHOLDER
-           ========================================= -->
-
-      <section class="project-visual-section">
-
-        <div class="section-container">
-
-          <div class="project-placeholder project-placeholder-large">
-
-            <span class="placeholder-label">
-              FUTURE CONCEPT VISUAL
-            </span>
-
-            <h2>
-              The world of Thunder of Owari
-            </h2>
-
-            <p>
-              This space will eventually show an original concept
-              image that represents the contrast between a modern
-              hunter and mid-1500s Japan.
-            </p>
-
-            <p class="placeholder-filename">
-              thunder-of-owari-concept.png
             </p>
 
           </div>
@@ -601,31 +566,387 @@
 
 
       <!-- =========================================
-           COLORADO PLACEHOLDER
+           BUILDING COLORADO
            ========================================= -->
 
-      <section class="project-visual-section">
+      <section class="section alt-section">
 
         <div class="section-container">
 
-          <div class="project-placeholder project-placeholder-large">
+          <div class="project-section-header">
 
-            <span class="placeholder-label">
-              PLANNED ENVIRONMENT
-            </span>
+            <div>
 
-            <h2>
-              Colorado Wilderness
-            </h2>
+              <p class="section-label">
+                BUILDING COLORADO
+              </p>
+
+              <h2>
+                Turning the opening into a playable environment
+              </h2>
+
+            </div>
+
 
             <p>
-              This will eventually show the mountain environment
-              used during the hunting and exploration section at
-              the beginning of the game.
+              The Colorado opening has moved from planning into
+              active environment development.
             </p>
 
-            <p class="placeholder-filename">
-              colorado-wilderness.png
+          </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/thunder-of-owari/colorado-map-development.png"
+              alt="Colorado map development and testing for Thunder of Owari"
+            />
+
+            <figcaption>
+              Early development and scale testing of the Colorado environment.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/thunder-of-owari/terrain-generation.png"
+              alt="Generated Colorado terrain for Thunder of Owari"
+            />
+
+            <figcaption>
+              Terrain generation used to build the foundation of the Colorado opening area.
+            </figcaption>
+
+          </figure>
+
+
+          <div class="project-note">
+
+            <p class="section-label">
+              CURRENT ENVIRONMENT WORK
+            </p>
+
+            <p>
+              I am using these environment tests to evaluate scale,
+              terrain shape, traversal space, and how the opening
+              wilderness should feel before filling the landscape
+              with more detailed gameplay and environmental content.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           HEIGHTMAP DEVELOPMENT
+           ========================================= -->
+
+      <section class="section">
+
+        <div class="section-container">
+
+          <div class="project-section-header">
+
+            <div>
+
+              <p class="section-label">
+                HEIGHTMAP DEVELOPMENT
+              </p>
+
+              <h2>
+                Shaping the landscape
+              </h2>
+
+            </div>
+
+
+            <p>
+              I use both 2D and 3D heightmap views to inspect the
+              elevation and overall structure of the Colorado terrain.
+            </p>
+
+          </div>
+
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+              gap: 20px;
+            "
+          >
+
+            <figure class="project-image">
+
+              <img
+                src="../images/thunder-of-owari/heightmap-2d.png"
+                alt="2D heightmap used for the Colorado environment in Thunder of Owari"
+              />
+
+              <figcaption>
+                2D heightmap used to define and inspect the landscape.
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="project-image">
+
+              <img
+                src="../images/thunder-of-owari/heightmap-3d.png"
+                alt="3D heightmap visualization for the Colorado environment in Thunder of Owari"
+              />
+
+              <figcaption>
+                3D heightmap visualization used to evaluate elevation and terrain structure.
+              </figcaption>
+
+            </figure>
+
+          </div>
+
+
+          <div class="project-note">
+
+            <p class="section-label">
+              WHY I USED HEIGHTMAPS
+            </p>
+
+            <p>
+              One of the earliest decisions I had to make when
+              building the Colorado environment was how to create
+              a large mountainous landscape efficiently.
+            </p>
+
+            <p>
+              Although Unreal Engine 5 provides tools for manually
+              sculpting terrain, making and importing a heightmap
+              took considerably less time than trying to sculpt the
+              entire area by hand.
+            </p>
+
+            <p>
+              Using a heightmap allowed me to establish the
+              elevation and overall terrain structure much faster,
+              which made it easier to move on to testing scale,
+              traversal, and environment generation.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           PROCEDURAL ENVIRONMENT TESTING
+           ========================================= -->
+
+      <section class="section alt-section">
+
+        <div class="section-container">
+
+          <div class="project-section-header">
+
+            <div>
+
+              <p class="section-label">
+                PROCEDURAL ENVIRONMENT TESTING
+              </p>
+
+              <h2>
+                Building forests without losing control of the level
+              </h2>
+
+            </div>
+
+
+            <p>
+              I am experimenting with Unreal Engine's Procedural
+              Content Generation tools to populate large areas while
+              keeping important traversal spaces usable.
+            </p>
+
+          </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/thunder-of-owari/pcg-spruce-forest.png"
+              alt="Procedural spruce forest generation test in Thunder of Owari"
+            />
+
+            <figcaption>
+              Early PCG testing used to generate a spruce forest across the Colorado landscape.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/thunder-of-owari/pcg-road-exclusion.png"
+              alt="Procedural forest test with trees excluded from a road in Thunder of Owari"
+            />
+
+            <figcaption>
+              PCG forest test with an exclusion area preventing procedural trees from covering the roadway.
+            </figcaption>
+
+          </figure>
+
+
+          <div class="project-detail-text">
+
+            <p>
+              The goal is not simply to generate as many trees as
+              possible. The procedural rules also need to respect
+              areas that the player will move through.
+            </p>
+
+            <p>
+              Testing road exclusion is an early example of that
+              approach. The forest can remain dense around the
+              surrounding terrain while leaving the road itself
+              clear for traversal.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           DEBUGGING
+           ========================================= -->
+
+      <section class="section">
+
+        <div class="section-container">
+
+          <div class="project-section-header">
+
+            <div>
+
+              <p class="section-label">
+                DEBUGGING & PROBLEM SOLVING
+              </p>
+
+              <h2>
+                Testing what breaks, not just what works
+              </h2>
+
+            </div>
+
+
+            <p>
+              Environment development also involves documenting
+              failed tests and unexpected results so I can understand
+              what needs to be fixed or refined.
+            </p>
+
+          </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/thunder-of-owari/road-generation-bug.png"
+              alt="Road generation bug during Thunder of Owari environment development"
+            />
+
+            <figcaption>
+              Road-generation debugging in Unreal Engine 5. An early test produced an unintended vertical terrain deformation.
+            </figcaption>
+
+          </figure>
+
+
+          <div class="project-detail-text">
+
+            <p>
+              While experimenting with road generation, I encountered
+              a case where the terrain broke and produced an extreme
+              vertical deformation instead of following the expected
+              landscape.
+            </p>
+
+            <p>
+              Not every system works correctly on the first attempt,
+              and part of development is identifying where a process
+              fails and working toward a better solution.
+            </p>
+
+            <p>
+              This particular issue is still being investigated as
+              I continue developing the road-generation workflow.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           PERFORMANCE OPTIMIZATION
+           ========================================= -->
+
+      <section class="section alt-section">
+
+        <div class="section-container project-two-column">
+
+          <div>
+
+            <p class="section-label">
+              PERFORMANCE OPTIMIZATION
+            </p>
+
+            <h2>
+              Learning to build beyond the prototype
+            </h2>
+
+          </div>
+
+
+          <div class="project-detail-text">
+
+            <p>
+              Performance became another challenge as I expanded
+              the area where procedural trees were being generated
+              and rendered.
+            </p>
+
+            <p>
+              The environment initially became noticeably choppy as
+              the amount of rendered content increased.
+            </p>
+
+            <p>
+              That pushed me to begin learning more about Unreal
+              Engine optimization rather than continuing to add
+              content without considering its performance cost.
+            </p>
+
+            <p>
+              After making optimization changes, the same environment
+              became substantially smoother during testing. I did not
+              record exact frame-rate measurements during those early
+              comparisons, so I am keeping the result qualitative
+              rather than presenting unsupported FPS numbers.
             </p>
 
           </div>
@@ -639,7 +960,7 @@
            GAME DESIGN
            ========================================= -->
 
-      <section class="section alt-section">
+      <section class="section">
 
         <div class="section-container">
 
@@ -722,7 +1043,7 @@
            PLAYER CHOICE
            ========================================= -->
 
-      <section class="section">
+      <section class="section alt-section">
 
         <div class="section-container project-two-column">
 
@@ -776,7 +1097,7 @@
            PLAYER EXPERIENCE
            ========================================= -->
 
-      <section class="section alt-section">
+      <section class="section">
 
         <div class="section-container project-two-column">
 
@@ -828,45 +1149,10 @@
 
 
       <!-- =========================================
-           JAPAN ENVIRONMENT PLACEHOLDER
+           GAMEPLAY SYSTEM DEVELOPMENT
            ========================================= -->
 
-      <section class="project-visual-section">
-
-        <div class="section-container">
-
-          <div class="project-placeholder project-placeholder-large">
-
-            <span class="placeholder-label">
-              PLANNED ENVIRONMENT
-            </span>
-
-            <h2>
-              First Village in Japan
-            </h2>
-
-            <p>
-              This space will eventually show the first historical
-              Japanese environment encountered after the protagonist
-              wakes in the past.
-            </p>
-
-            <p class="placeholder-filename">
-              japan-village.png
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- =========================================
-           DEVELOPMENT
-           ========================================= -->
-
-      <section class="section">
+      <section class="section alt-section">
 
         <div class="section-container">
 
@@ -875,7 +1161,7 @@
             <div>
 
               <p class="section-label">
-                DEVELOPMENT
+                GAMEPLAY DEVELOPMENT
               </p>
 
               <h2>
@@ -886,26 +1172,12 @@
 
 
             <p>
-              Development currently focuses on the systems the player
-              will use constantly before moving into large-scale world
-              production.
+              Development began with the systems the player will
+              use constantly before expanding into larger world
+              development.
             </p>
 
           </div>
-
-
-          <figure class="project-image">
-
-            <img
-              src="../images/thunder-of-owari/movement-test.png"
-              alt="Thunder of Owari movement system testing in Unreal Engine 5"
-            />
-
-            <figcaption>
-              Testing movement and gameplay systems in Unreal Engine 5.
-            </figcaption>
-
-          </figure>
 
 
           <div class="system-list impact-system-list">
@@ -917,8 +1189,8 @@
               </span>
 
               <p>
-                Sprinting is tied into the stamina system rather than
-                acting as an unlimited speed increase.
+                Sprinting is tied into the stamina system rather
+                than acting as an unlimited speed increase.
               </p>
 
             </div>
@@ -946,8 +1218,8 @@
 
               <p>
                 Crouching changes movement speed and character
-                behavior while integrating with sprinting and other
-                movement states.
+                behavior while integrating with sprinting and
+                other movement states.
               </p>
 
             </div>
@@ -960,9 +1232,9 @@
               </span>
 
               <p>
-                Directional dodging supports forward, backward, and
-                side movement while taking camera direction and
-                character orientation into account.
+                Directional dodging supports forward, backward,
+                and side movement while taking camera direction
+                and character orientation into account.
               </p>
 
             </div>
@@ -978,7 +1250,7 @@
            ANIMATION
            ========================================= -->
 
-      <section class="section alt-section">
+      <section class="section">
 
         <div class="section-container">
 
@@ -1044,34 +1316,48 @@
 
 
       <!-- =========================================
-           BLUEPRINT PLACEHOLDER
+           BLUEPRINT SYSTEMS
            ========================================= -->
 
       <section class="project-visual-section">
 
         <div class="section-container">
 
-          <div class="project-placeholder">
+          <div class="project-section-header">
 
-            <span class="placeholder-label">
-              DEVELOPMENT SCREENSHOT
-            </span>
+            <div>
 
-            <h2>
-              Blueprint Systems
-            </h2>
+              <p class="section-label">
+                BLUEPRINT DEVELOPMENT
+              </p>
+
+              <h2>
+                Building gameplay logic visually
+              </h2>
+
+            </div>
+
 
             <p>
-              Add a clear Unreal Engine Blueprint screenshot here
-              showing one of the movement, stamina, crouch, dodge,
-              or animation systems behind the game.
-            </p>
-
-            <p class="placeholder-filename">
-              blueprint-system.png
+              Core gameplay behavior is being built with Unreal
+              Engine's Blueprint visual scripting system.
             </p>
 
           </div>
+
+
+          <figure class="project-image">
+
+            <img
+              src="../images/thunder-of-owari/blueprint-system.png"
+              alt="Blueprint gameplay system development for Thunder of Owari"
+            />
+
+            <figcaption>
+              Blueprint logic used during development of Thunder of Owari's gameplay systems.
+            </figcaption>
+
+          </figure>
 
         </div>
 
@@ -1123,13 +1409,14 @@
               </span>
 
               <h3>
-                Animation
+                Colorado Environment
               </h3>
 
               <p>
-                Movement animations, transitions, retargeting, and
-                how those systems behave together continue to be
-                refined.
+                Terrain generation, heightmap development,
+                map-scale testing, procedural vegetation,
+                road testing, and performance refinement are
+                currently active areas of development.
               </p>
 
             </div>
@@ -1138,16 +1425,36 @@
             <div class="status-card">
 
               <span>
-                PLANNED
+                ACTIVE
               </span>
 
               <h3>
-                Environments
+                Animation
               </h3>
 
               <p>
-                The full Colorado wilderness and historical Japanese
-                environments have not yet been built.
+                Movement animations, transitions, retargeting,
+                and how those systems behave together continue
+                to be refined.
+              </p>
+
+            </div>
+
+
+            <div class="status-card">
+
+              <span>
+                FUTURE
+              </span>
+
+              <h3>
+                Historical Japan
+              </h3>
+
+              <p>
+                Development of the historical Japanese environments
+                will come after the Colorado opening and its core
+                gameplay systems are further developed.
               </p>
 
             </div>
@@ -1189,9 +1496,9 @@
               </h3>
 
               <p>
-                Build the mountain environment that introduces
-                hunting, exploration, and the protagonist's life
-                before the time-slip.
+                Continue refining terrain, procedural vegetation,
+                roads, trails, traversal spaces, environmental
+                detail, and optimization.
               </p>
 
             </div>
@@ -1227,8 +1534,8 @@
               </h3>
 
               <p>
-                Begin building the first Japanese environment and
-                the area where the protagonist awakens.
+                Begin building the first Japanese environment
+                after the Colorado opening is further developed.
               </p>
 
             </div>
@@ -1245,9 +1552,9 @@
               </h3>
 
               <p>
-                Develop the people who introduce the player to the
-                world and begin establishing the relationships that
-                will drive the story.
+                Develop the people who introduce the player to
+                the world and begin establishing the relationships
+                that drive the story.
               </p>
 
             </div>
@@ -1361,27 +1668,13 @@
           </h2>
 
           <p class="projects-next-description">
-            Screenshots from development, testing, animation work,
-            environment development, and future stages of the
-            project will be collected here.
+            Screenshots from animation work, Blueprint development,
+            terrain generation, environment testing, procedural
+            generation, and debugging.
           </p>
 
 
           <div class="development-gallery">
-
-
-            <figure class="gallery-item">
-
-              <img
-                src="../images/thunder-of-owari/movement-test.png"
-                alt="Movement system testing in Thunder of Owari"
-              />
-
-              <figcaption>
-                Movement and gameplay-system testing
-              </figcaption>
-
-            </figure>
 
 
             <figure class="gallery-item">
@@ -1393,6 +1686,118 @@
 
               <figcaption>
                 Animation retargeting and crouched movement
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/thunder-of-owari/blueprint-system.png"
+                alt="Blueprint gameplay system development in Thunder of Owari"
+              />
+
+              <figcaption>
+                Blueprint gameplay-system development
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/thunder-of-owari/colorado-map-development.png"
+                alt="Colorado map development and testing in Thunder of Owari"
+              />
+
+              <figcaption>
+                Colorado map development and scale testing
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/thunder-of-owari/terrain-generation.png"
+                alt="Colorado terrain generation in Thunder of Owari"
+              />
+
+              <figcaption>
+                Colorado terrain generation
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/thunder-of-owari/heightmap-2d.png"
+                alt="2D Colorado heightmap for Thunder of Owari"
+              />
+
+              <figcaption>
+                2D heightmap development
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/thunder-of-owari/heightmap-3d.png"
+                alt="3D Colorado heightmap visualization for Thunder of Owari"
+              />
+
+              <figcaption>
+                3D heightmap visualization
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/thunder-of-owari/pcg-spruce-forest.png"
+                alt="Procedural spruce forest generation test in Thunder of Owari"
+              />
+
+              <figcaption>
+                Procedural spruce forest testing
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/thunder-of-owari/pcg-road-exclusion.png"
+                alt="PCG road exclusion test in Thunder of Owari"
+              />
+
+              <figcaption>
+                PCG road exclusion and traversal testing
+              </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+              <img
+                src="../images/thunder-of-owari/road-generation-bug.png"
+                alt="Road generation bug during Thunder of Owari development"
+              />
+
+              <figcaption>
+                Road-generation debugging and terrain deformation issue
               </figcaption>
 
             </figure>
@@ -1417,16 +1822,16 @@
 
 
             <a
-              href="../projects-current.html"
+              href="../projects.html"
               class="project-navigation-card"
             >
 
               <span>
-                ← Current Projects
+                ← All Projects
               </span>
 
               <strong>
-                Back to Current Work
+                Back to Projects
               </strong>
 
             </a>
