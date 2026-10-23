@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
+
   <head>
+
     <meta charset="UTF-8" />
 
     <meta
@@ -14,11 +16,19 @@
       rel="stylesheet"
       href="css/style.css"
     />
+
   </head>
+
 
   <body>
 
+
+    <!-- =========================================
+         NAVIGATION
+         ========================================= -->
+
     <header class="site-header">
+
       <div class="nav-container">
 
         <a
@@ -28,70 +38,270 @@
           Hassan Moharrem
         </a>
 
+
         <nav class="main-nav">
-          <a href="index.html">Home</a>
-          <a href="about.html" class="active-nav">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="experience.html">Experience</a>
-          <a href="resume.html">Resume</a>
-          <a href="contact.html">Contact</a>
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a
+            href="about.html"
+            class="active-nav"
+          >
+            About
+          </a>
+
+          <a href="projects.html">
+            Projects
+          </a>
+
+          <a href="experience.html">
+            Experience
+          </a>
+
+          <a href="resume.html">
+            Resume
+          </a>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
         </nav>
 
       </div>
+
     </header>
+
 
 
     <main>
 
-      <!-- ABOUT HERO -->
+
+      <!-- =========================================
+           ABOUT HERO
+           ========================================= -->
 
       <section class="about-hero">
 
         <div class="section-container">
 
-          <p class="section-label">
-            ABOUT
-          </p>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+              gap: 70px;
+              align-items: center;
+            "
+          >
 
-          <div class="about-hero-title">
 
-            <span>
-              Background
-            </span>
+            <div>
 
-            <span>
-              Interests
-            </span>
+              <p class="section-label">
+                ABOUT ME
+              </p>
 
-            <span>
-              Goals
-            </span>
+
+              <h1
+                style="
+                  margin-bottom: 28px;
+                "
+              >
+                Hi, I'm Hassan.
+              </h1>
+
+
+              <div class="project-detail-text">
+
+                <p>
+                  I'm a Computer Science student at Metropolitan
+                  State University of Denver with a strong interest
+                  in game development, programming, and building
+                  things from ideas.
+                </p>
+
+                <p>
+                  A lot of my time goes into technical projects,
+                  but I also really enjoy being outside, exploring
+                  beautiful places, taking pictures, swimming,
+                  playing sports, and experiencing things away from
+                  a computer screen.
+                </p>
+
+                <p>
+                  Those interests often find their way back into my
+                  work, especially when I am thinking about
+                  environments, exploration, photography, or the
+                  kinds of places I want to create.
+                </p>
+
+              </div>
+
+            </div>
+
+
+
+            <figure
+              class="project-image"
+              style="
+                margin: 0 0 0 auto;
+                width: min(100%, 430px);
+              "
+            >
+
+              <img
+                src="images/about/profile.jpg"
+                alt="Hassan Moharrem"
+                style="
+                  width: 100%;
+                  height: 520px;
+                  object-fit: cover;
+                  object-position: center top;
+                  border-radius: 16px;
+                "
+              />
+
+            </figure>
+
 
           </div>
-
-          <p class="about-hero-description">
-            A closer look at what I study, what I enjoy building,
-            the technologies I use, and where I want to take my work.
-          </p>
 
         </div>
 
       </section>
 
 
-      <!-- EDUCATION -->
+
+      <!-- =========================================
+           EGYPT TO COLORADO
+           ========================================= -->
+
+      <section class="section alt-section">
+
+        <div class="section-container">
+
+          <div
+            style="
+              max-width: 760px;
+              margin-bottom: 48px;
+            "
+          >
+
+            <p class="section-label">
+              MY BACKGROUND
+            </p>
+
+            <h2>
+              From Egypt to Colorado
+            </h2>
+
+
+            <div class="project-detail-text">
+
+              <p>
+                I was born in Egypt and came to the United States
+                in early 2007. Since then, Colorado has become a
+                major part of my life.
+              </p>
+
+              <p>
+                The two places look completely different, but both
+                have given me environments and scenery that I enjoy
+                stopping to appreciate.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+              gap: 28px;
+            "
+          >
+
+
+            <figure
+              class="project-image"
+              style="margin: 0;"
+            >
+
+              <img
+                src="images/about/egypt-beach-sunset.jpg"
+                alt="Beach sunset in Egypt"
+                loading="lazy"
+                style="
+                  width: 100%;
+                  height: 380px;
+                  object-fit: cover;
+                  object-position: center;
+                  border-radius: 16px;
+                "
+              />
+
+              <figcaption>
+                A beach sunset in Egypt.
+              </figcaption>
+
+            </figure>
+
+
+
+            <figure
+              class="project-image"
+              style="margin: 0;"
+            >
+
+              <img
+                src="images/about/colorado-mountains.jpg"
+                alt="Colorado mountain landscape"
+                loading="lazy"
+                style="
+                  width: 100%;
+                  height: 380px;
+                  object-fit: cover;
+                  object-position: center;
+                  border-radius: 16px;
+                "
+              />
+
+              <figcaption>
+                The Colorado mountains.
+              </figcaption>
+
+            </figure>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================================
+           EDUCATION
+           ========================================= -->
 
       <section class="section">
 
         <div class="section-container">
 
           <p class="section-label">
-            BACKGROUND
+            EDUCATION
           </p>
 
           <h2>
-            Education
+            What I'm studying
           </h2>
+
 
           <div class="education-card">
 
@@ -104,10 +314,11 @@
                 </h3>
 
                 <p class="education-subtitle">
-                  Computer Science
+                  Bachelor of Science in Computer Science
                 </p>
 
               </div>
+
 
               <span class="education-status">
                 Current
@@ -115,17 +326,19 @@
 
             </div>
 
+
             <p>
-              My studies are helping me build a stronger foundation in
-              programming, software development, web technologies,
-              technical communication, databases, version control,
-              and collaborative development.
+              My coursework is helping me strengthen my foundation
+              in programming, software development, databases,
+              web technologies, technical communication, version
+              control, and collaborative development.
             </p>
 
             <p>
-              Outside of coursework, I spend additional time building
-              personal projects in Unreal Engine and Python so I can apply
-              what I learn to larger creative and technical projects.
+              Outside class, I spend a lot of time applying what
+              I learn to personal projects involving Unreal Engine,
+              simulation, mapping, automation, procedural
+              environments, and desktop applications.
             </p>
 
           </div>
@@ -135,104 +348,154 @@
       </section>
 
 
-      <!-- INTERESTS -->
+
+      <!-- =========================================
+           BEYOND THE SCREEN
+           ========================================= -->
 
       <section class="section alt-section">
 
         <div class="section-container">
 
-          <p class="section-label">
-            INTERESTS
-          </p>
+          <div
+            style="
+              max-width: 760px;
+              margin-bottom: 44px;
+            "
+          >
 
-          <h2>
-            What I enjoy working on
-          </h2>
+            <p class="section-label">
+              BEYOND THE SCREEN
+            </p>
 
-          <div class="interest-grid">
+            <h2>
+              What I enjoy outside of development
+            </h2>
 
-            <div class="interest-item">
+            <p class="projects-next-description">
+              Some of the things that keep me busy when I'm not
+              programming or working on a project.
+            </p>
 
-              <h3>
-                Level Design
-              </h3>
-
-              <p>
-                Player flow, landmarks, points of interest, exploration,
-                sightlines, and gameplay spaces.
-              </p>
-
-            </div>
-
-
-            <div class="interest-item">
-
-              <h3>
-                Gameplay Systems
-              </h3>
-
-              <p>
-                Movement, stamina, crouching, dodging,
-                interactions, and player behavior.
-              </p>
-
-            </div>
+          </div>
 
 
-            <div class="interest-item">
 
-              <h3>
-                Environmental Storytelling
-              </h3>
-
-              <p>
-                Using environments, layout, props, atmosphere,
-                and visual details to support a story.
-              </p>
-
-            </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+              gap: 28px;
+            "
+          >
 
 
-            <div class="interest-item">
+            <article class="project-card">
 
-              <h3>
-                Programming
-              </h3>
+              <figure
+                class="project-image"
+                style="
+                  margin: 0;
+                  padding: 28px 28px 0 28px;
+                "
+              >
 
-              <p>
-                Building tools, automating repetitive work,
-                solving problems, and creating useful systems.
-              </p>
+                <img
+                  src="images/about/nature-photography.jpg"
+                  alt="Nature photograph taken by Hassan"
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    height: 310px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 14px;
+                  "
+                />
 
-            </div>
-
-
-            <div class="interest-item">
-
-              <h3>
-                Web Development
-              </h3>
-
-              <p>
-                Building structured and accessible websites using
-                HTML, CSS, Bootstrap, Django, and related tools.
-              </p>
-
-            </div>
+              </figure>
 
 
-            <div class="interest-item">
+              <div class="project-card-content">
 
-              <h3>
-                Technical Problem Solving
-              </h3>
+                <h3>
+                  Nature & Photography
+                </h3>
 
-              <p>
-                Breaking larger problems into smaller steps,
-                testing solutions, and improving them over time.
-              </p>
+                <p class="project-card-description">
+                  I love nature and taking pictures of things I
+                  find beautiful. It might be a mountain, a sunset,
+                  interesting lighting, water, or something that
+                  simply catches my attention.
+                </p>
 
-            </div>
+                <p class="project-card-description">
+                  Photography gives me a reason to slow down and
+                  notice details that I might otherwise walk past.
+                </p>
+
+              </div>
+
+            </article>
+
+
+
+            <article class="project-card">
+
+              <figure
+                class="project-image"
+                style="
+                  margin: 0;
+                  padding: 28px 28px 0 28px;
+                "
+              >
+
+                <img
+                  src="images/about/outdoor-sports.jpg"
+                  alt="Playing soccer outdoors"
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    height: 310px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 14px;
+                  "
+                />
+
+              </figure>
+
+
+              <div class="project-card-content">
+
+                <h3>
+                  Outdoors & Sports
+                </h3>
+
+                <p class="project-card-description">
+                  I love being outside in the sun. Swimming,
+                  beach volleyball, and soccer are some of my
+                  favorite ways to spend time outdoors.
+                </p>
+
+                <p class="project-card-description">
+                  Soccer in particular has been part of my life
+                  for a long time through both playing and
+                  refereeing. I am not someone who memorizes every
+                  player's statistics or follows every detail of
+                  professional soccer. I simply enjoy the game,
+                  playing it, and being involved in it.
+                </p>
+
+                <p class="project-card-description">
+                  I also spend enough time outside that the tan
+                  lines on my arms usually make that pretty obvious.
+                </p>
+
+              </div>
+
+            </article>
+
 
           </div>
 
@@ -241,77 +504,131 @@
       </section>
 
 
-      <!-- GOALS -->
+
+      <!-- =========================================
+           BRECKENRIDGE FEATURE
+           ========================================= -->
 
       <section class="section">
 
         <div class="section-container">
 
-          <p class="section-label">
-            GOALS
-          </p>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+              gap: 50px;
+              align-items: stretch;
+            "
+          >
 
-          <h2>
-            Where I want to go
-          </h2>
 
-          <div class="goal-grid">
+            <!-- LARGE FEATURE IMAGE -->
 
-            <div class="goal-card">
+            <figure
+              class="project-image"
+              style="
+                margin: 0;
+                height: 100%;
+              "
+            >
 
-              <span class="card-number">
-                01
-              </span>
+              <img
+                src="images/about/breckenridge-snow-buggy.jpg"
+                alt="Snow buggy trip near Breckenridge Colorado"
+                loading="lazy"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  min-height: 620px;
+                  object-fit: cover;
+                  object-position: center;
+                  border-radius: 18px;
+                "
+              />
 
-              <h3>
-                Level Design
-              </h3>
+            </figure>
 
-              <p>
-                I want to design gameplay spaces that feel memorable,
-                understandable, and enjoyable to explore while supporting
-                the way the game is meant to be played.
+
+
+            <!-- STORY COLUMN -->
+
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              "
+            >
+
+              <p class="section-label">
+                A MEMORABLE ADVENTURE
               </p>
+
+              <h2
+                style="
+                  margin-bottom: 24px;
+                  font-size: clamp(2.4rem, 4vw, 4.2rem);
+                  line-height: 1.02;
+                "
+              >
+                11,000 feet above sea level
+              </h2>
+
+
+              <div class="project-detail-text">
+
+                <p>
+                  One of my favorite Colorado experiences was a
+                  trip to Breckenridge where I rode a snow buggy
+                  up to around 11,000 feet in elevation.
+                </p>
+
+                <p>
+                  After the ride, I stopped near one of the mountain
+                  viewpoints and had hot chocolate while looking out
+                  over the surrounding landscape.
+                </p>
+
+                <p>
+                  Experiences like that are a big part of why I
+                  enjoy being outside. I like finding places that
+                  feel completely different from everyday life and
+                  having a reason to stop for a while and take
+                  everything in.
+                </p>
+
+              </div>
+
+
+              <figure
+                class="project-image"
+                style="
+                  margin: 30px 0 0 0;
+                "
+              >
+
+                <img
+                  src="images/about/breckenridge-viewpoint.jpg"
+                  alt="Mountain viewpoint near Breckenridge Colorado"
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    height: 240px;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 14px;
+                  "
+                />
+
+                <figcaption>
+                  The view from high in the Colorado mountains.
+                </figcaption>
+
+              </figure>
 
             </div>
 
-
-            <div class="goal-card">
-
-              <span class="card-number">
-                02
-              </span>
-
-              <h3>
-                Unreal Engine Development
-              </h3>
-
-              <p>
-                I want to keep improving my ability to build levels,
-                gameplay systems, player movement, interactions, and other
-                features directly inside Unreal Engine.
-              </p>
-
-            </div>
-
-
-            <div class="goal-card">
-
-              <span class="card-number">
-                03
-              </span>
-
-              <h3>
-                Collaborative Game Development
-              </h3>
-
-              <p>
-                My long-term goal is to work with designers, programmers,
-                artists, and other developers on larger games where each
-                discipline contributes to one shared experience.
-              </p>
-
-            </div>
 
           </div>
 
@@ -320,169 +637,98 @@
       </section>
 
 
-      <!-- SKILLS -->
+
+      <!-- =========================================
+           PERSONAL INFLUENCE
+           ========================================= -->
 
       <section class="section alt-section">
 
         <div class="section-container">
 
-          <p class="section-label">
-            SKILLS & TOOLS
-          </p>
-
-          <h2>
-            Technologies I use
-          </h2>
-
-          <div class="skills-layout">
-
-
-            <div class="skill-category">
-
-              <div class="skill-category-heading">
-
-                <h3>
-                  Game Development
-                </h3>
-
-              </div>
-
-              <div class="skill-list">
-
-                <div class="skill-row">
-                  <span>Unreal Engine 5</span>
-                  <span class="skill-level">Working Experience</span>
-                </div>
-
-                <div class="skill-row">
-                  <span>Blueprints</span>
-                  <span class="skill-level">Working Experience</span>
-                </div>
-
-                <div class="skill-row">
-                  <span>Level Design</span>
-                  <span class="skill-level">Developing</span>
-                </div>
-
-                <div class="skill-row">
-                  <span>Gameplay Systems</span>
-                  <span class="skill-level">Developing</span>
-                </div>
-
-              </div>
-
-            </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+              gap: 60px;
+              align-items: center;
+            "
+          >
 
 
-            <div class="skill-category">
+            <figure
+              class="project-image"
+              style="margin: 0;"
+            >
 
-              <div class="skill-category-heading">
+              <img
+                src="images/about/nature-inspiration.jpg"
+                alt="Natural landscape that inspires Hassan's creative work"
+                loading="lazy"
+                style="
+                  width: 100%;
+                  height: 440px;
+                  object-fit: cover;
+                  object-position: center;
+                  border-radius: 16px;
+                "
+              />
 
-                <h3>
-                  Programming Languages
-                </h3>
+            </figure>
 
-              </div>
 
-              <div class="skill-list">
 
-                <div class="skill-row">
-                  <span>Python</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
+            <div>
 
-                <div class="skill-row">
-                  <span>C++</span>
-                  <span class="skill-level">Familiar</span>
-                </div>
+              <p class="section-label">
+                PERSONAL INFLUENCE
+              </p>
 
-                <div class="skill-row">
-                  <span>Java</span>
-                  <span class="skill-level">Familiar</span>
-                </div>
+              <h2>
+                Real experiences influence what I build
+              </h2>
 
-                <div class="skill-row">
-                  <span>HTML</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
 
-                <div class="skill-row">
-                  <span>CSS</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
+              <div class="project-detail-text">
+
+                <p>
+                  My interests outside of programming often end
+                  up influencing the projects I work on.
+                </p>
+
+                <p>
+                  My appreciation for Colorado's mountains and
+                  natural scenery helped inspire the Colorado
+                  wilderness opening of
+                  <strong>Thunder of Owari</strong>.
+                </p>
+
+                <p>
+                  Photography is another example. Because I already
+                  enjoy taking pictures of things I find beautiful
+                  in real life, I wanted photography to remain
+                  available to the player throughout the game as
+                  well.
+                </p>
+
+                <p>
+                  I like when the projects I build contain pieces
+                  of things that genuinely interest me instead of
+                  feeling completely separate from who I am.
+                </p>
+
+
+                <a
+                  href="projects/thunder-of-owari.html"
+                  class="project-link"
+                >
+                  Explore Thunder of Owari →
+                </a>
 
               </div>
 
             </div>
 
-
-            <div class="skill-category">
-
-              <div class="skill-category-heading">
-
-                <h3>
-                  Frameworks & Web
-                </h3>
-
-              </div>
-
-              <div class="skill-list">
-
-                <div class="skill-row">
-                  <span>Django</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
-
-                <div class="skill-row">
-                  <span>Bootstrap</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <div class="skill-category">
-
-              <div class="skill-category-heading">
-
-                <h3>
-                  Tools & Programs
-                </h3>
-
-              </div>
-
-              <div class="skill-list">
-
-                <div class="skill-row">
-                  <span>Git</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
-
-                <div class="skill-row">
-                  <span>GitHub</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
-
-                <div class="skill-row">
-                  <span>VS Code</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
-
-                <div class="skill-row">
-                  <span>SQLite</span>
-                  <span class="skill-level">Familiar</span>
-                </div>
-
-                <div class="skill-row">
-                  <span>ComfyUI</span>
-                  <span class="skill-level">Working Knowledge</span>
-                </div>
-
-              </div>
-
-            </div>
 
           </div>
 
@@ -491,46 +737,54 @@
       </section>
 
 
-      <!-- CURRENT LEARNING -->
+
+      <!-- =========================================
+           LOOKING FORWARD
+           ========================================= -->
 
       <section class="section">
 
-        <div class="section-container">
+        <div class="section-container project-two-column">
 
-          <p class="section-label">
-            CURRENTLY LEARNING
-          </p>
+          <div>
 
-          <h2>
-            What I'm improving
-          </h2>
+            <p class="section-label">
+              LOOKING FORWARD
+            </p>
 
-          <div class="learning-list">
+            <h2>
+              Still learning, still building
+            </h2>
 
-            <div class="learning-item">
-              <span>01</span>
-              <p>Unreal Engine level design and gameplay systems</p>
-            </div>
+          </div>
 
-            <div class="learning-item">
-              <span>02</span>
-              <p>Multiplayer and battle royale level design</p>
-            </div>
 
-            <div class="learning-item">
-              <span>03</span>
-              <p>Better Blueprint architecture and reusable systems</p>
-            </div>
+          <div class="project-detail-text">
 
-            <div class="learning-item">
-              <span>04</span>
-              <p>Python development and automation</p>
-            </div>
+            <p>
+              My long-term goal is to build a career where I can
+              combine technical problem solving with creative work.
+            </p>
 
-            <div class="learning-item">
-              <span>05</span>
-              <p>Django and database-backed web development</p>
-            </div>
+            <p>
+              Game development especially interests me because it
+              brings programming, design, art, environments,
+              storytelling, sound, and player interaction together
+              into one experience.
+            </p>
+
+            <p>
+              I want to continue improving with Unreal Engine while
+              also learning tools such as Unity and Blender and
+              gaining a broader understanding of professional game
+              production.
+            </p>
+
+            <p>
+              For now, my goal is simple: keep building things,
+              learn from what goes wrong, and make each project
+              better than the last.
+            </p>
 
           </div>
 
@@ -539,85 +793,10 @@
       </section>
 
 
-      <!-- HOW I WORK -->
 
-      <section class="section alt-section">
-
-        <div class="section-container">
-
-          <p class="section-label">
-            HOW I WORK
-          </p>
-
-          <h2>
-            What I bring to a project
-          </h2>
-
-          <div class="strength-grid">
-
-            <div class="strength-card">
-
-              <h3>
-                Fast Learner
-              </h3>
-
-              <p>
-                I am comfortable learning unfamiliar tools and systems
-                when a project requires them.
-              </p>
-
-            </div>
-
-
-            <div class="strength-card">
-
-              <h3>
-                Problem Solver
-              </h3>
-
-              <p>
-                I like breaking technical problems into smaller pieces,
-                testing solutions, and finding the cause of issues.
-              </p>
-
-            </div>
-
-
-            <div class="strength-card">
-
-              <h3>
-                Collaborative
-              </h3>
-
-              <p>
-                I have experience working in team projects, organizing
-                shared work, using GitHub, and helping teammates.
-              </p>
-
-            </div>
-
-
-            <div class="strength-card">
-
-              <h3>
-                Persistent
-              </h3>
-
-              <p>
-                I am willing to keep testing, rebuilding, and learning
-                when something does not work the first time.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- NEXT -->
+      <!-- =========================================
+           KEEP EXPLORING
+           ========================================= -->
 
       <section class="section about-next-section">
 
@@ -628,10 +807,12 @@
           </p>
 
           <h2>
-            See what I've been building
+            See what I've been working on
           </h2>
 
+
           <div class="next-link-grid">
+
 
             <a
               href="projects.html"
@@ -647,6 +828,7 @@
               </strong>
 
             </a>
+
 
 
             <a
@@ -665,6 +847,7 @@
             </a>
 
 
+
             <a
               href="contact.html"
               class="next-page-card"
@@ -680,14 +863,21 @@
 
             </a>
 
+
           </div>
 
         </div>
 
       </section>
 
+
     </main>
 
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
 
     <footer class="site-footer">
 
@@ -712,5 +902,7 @@
 
     <script src="js/main.js"></script>
 
+
   </body>
+
 </html>
